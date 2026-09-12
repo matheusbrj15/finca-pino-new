@@ -47,7 +47,8 @@ export type Product = {
 
 // Cole aqui a URL externa da Zedy quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null = null;
+export const PRODUCT_CHECKOUT_URL: string | null =
+  'https://seguro.final-agora-br.shop/api/public/shopify?product=906917623286&store=9069';
 
 export const product: Product = {
   name: 'Fixadora Finca Pino Profissional Ação Direta 27mm Reforçada',
