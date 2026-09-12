@@ -47,35 +47,34 @@ export type Product = {
 
 // Cole aqui a URL externa da Zedy quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null =
-  'https://seguro.final-agora-br.shop/api/public/shopify?product=906924912448&store=9069';
+export const PRODUCT_CHECKOUT_URL: string | null = null;
 
 export const product: Product = {
-  name: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 Profissional',
+  name: 'Fixadora Finca Pino Profissional Ação Direta 27mm Reforçada',
   shortName: 'Menegotti MMA PRO 1000',
   eyebrow: 'AIRLESS PROFISSIONAL • 1000 W',
   description:
     'Alta pressão e maior produtividade para aplicar tintas com acabamento uniforme em diferentes tipos de projeto.',
-  price: 89.9,
-  oldPrice: null,
+  price: 79.9,
+  oldPrice: 189.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
   availableVoltages: ['127V', '220V'],
   images: [
     {
-      src: '/product/mma-pro-1000-principal-clean-v3.png',
-      alt: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 em composição principal limpa',
+      src: '/product/finca-pino-principal.png',
+      alt: 'Fixadora Finca Pino Profissional Ação Direta 27mm em composição principal',
     },
     {
-      src: '/product/mma-pro-1000-criativo-performance.png',
-      alt: 'Criativo de alta performance da Menegotti MMA PRO 1000 com ficha resumida',
+      src: '/product/finca-pino-performance.png',
+      alt: 'Especificações da Fixadora Finca Pino: 27mm, ação direta, kits de 50/100/200 pinos',
     },
     {
-      src: '/product/mma-pro-1000-criativo-airless.png',
-      alt: 'Criativo sobre tecnologia Airless e aplicação uniforme da Menegotti MMA PRO 1000',
+      src: '/product/finca-pino-aplicacoes.png',
+      alt: 'Fixadora Finca Pino em uso: madeira, rodapé, molduras, gesso e MDF',
     },
     {
-      src: '/product/mma-pro-1000-criativo-aplicacoes.png',
-      alt: 'Criativo de aplicações em paredes, telhados, cercas e pinturas profissionais',
+      src: '/product/finca-pino-kit.png',
+      alt: 'O que vem na caixa: fixadora, kit de pinos, óculos de proteção e maleta com acessórios',
     },
   ],
   benefits: [
@@ -127,86 +126,8 @@ export const product: Product = {
     '1 bisnaga de óleo',
     '1 mangueira de 15 m',
   ],
-  reviews: [
-    {
-      name: 'Rafael Nunes',
-      city: 'Campinas, SP',
-      rating: 5,
-      verified: false,
-      text: 'Chegou tudo certo e bem embalado. A mangueira e os acessórios vieram completos, e a montagem foi tranquila.',
-      images: [
-        {
-          src: '/reviews/avaliacao-1.webp',
-          alt: 'Mangueira e acessórios da Menegotti MMA PRO 1000 recebidos por cliente',
-        },
-      ],
-    },
-    {
-      name: 'Marcelo Pires',
-      city: 'Goiânia, GO',
-      rating: 5,
-      verified: false,
-      text: 'Usei em um trabalho maior e achei o equipamento prático. A aplicação ficou uniforme e o rendimento foi bom.',
-      images: [
-        {
-          src: '/reviews/avaliacao-2.webp',
-          alt: 'Equipamento Menegotti sendo utilizado em serviço de pintura',
-        },
-      ],
-    },
-    {
-      name: 'Eduardo Martins',
-      city: 'Belo Horizonte, MG',
-      rating: 5,
-      verified: false,
-      text: 'Produto veio bem acomodado na caixa e sem peças faltando. Atendeu bem para pintura profissional.',
-      images: [
-        {
-          src: '/reviews/avaliacao-3.webp',
-          alt: 'Máquina Menegotti MMA PRO 1000 acomodada dentro da embalagem',
-        },
-      ],
-    },
-    {
-      name: 'André Ribeiro',
-      city: 'Curitiba, PR',
-      rating: 4,
-      verified: false,
-      text: 'A caixa chegou com algumas marcas do transporte, mas o equipamento e os acessórios vieram certos. Bom custo-benefício.',
-      images: [
-        {
-          src: '/reviews/avaliacao-4.webp',
-          alt: 'Caixa de transporte da Máquina de Pintura Airless Menegotti MMA PRO 1000',
-        },
-      ],
-    },
-    {
-      name: 'Fábio Almeida',
-      city: 'Sorocaba, SP',
-      rating: 5,
-      verified: false,
-      text: 'Conjunto completo e fácil de organizar. A pressão ajuda bastante em áreas maiores e o acabamento ficou profissional.',
-      images: [
-        {
-          src: '/reviews/avaliacao-5.webp',
-          alt: 'Máquina Menegotti MMA PRO 1000 com mangueira e acessórios organizados',
-        },
-      ],
-    },
-    {
-      name: 'Leandro Costa',
-      city: 'Ribeirão Preto, SP',
-      rating: 5,
-      verified: false,
-      text: 'Pistola e peças vieram bem protegidas. O equipamento é simples de usar e agilizou bastante o serviço.',
-      images: [
-        {
-          src: '/reviews/avaliacao-6.webp',
-          alt: 'Pistola e componentes da Menegotti MMA PRO 1000 embalados para entrega',
-        },
-      ],
-    },
-  ],
+  // Aguardando avaliações reais de clientes para preencher esta seção.
+  reviews: [],
   faq: [
     {
       question: 'Para quais tipos de pintura ela é indicada?',
