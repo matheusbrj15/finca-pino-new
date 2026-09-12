@@ -126,8 +126,86 @@ export const product: Product = {
     '1 bisnaga de óleo',
     '1 mangueira de 15 m',
   ],
-  // Aguardando avaliações reais de clientes para preencher esta seção.
-  reviews: [],
+  reviews: [
+    {
+      name: 'Leonardo Casemiro',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Muito forte a fixação, super útil, facilita o trabalho, a precisão, e a segurança! Super indico',
+      images: [
+        {
+          src: '/reviews/avaliacao-1.webp',
+          alt: 'Fixadora Finca Pino recebida por cliente, dentro da maleta',
+        },
+      ],
+    },
+    {
+      name: 'Daniele Costa',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Segurança foi pensada na elaboração deste material, pois é bastante seguro e fácil de usar. Recomendo que usem bastante, pois facilita muito o trabalho, e ajuda na produção.',
+      images: [
+        {
+          src: '/reviews/avaliacao-2.webp',
+          alt: 'Fixadora Finca Pino e acessórios organizados na maleta',
+        },
+      ],
+    },
+    {
+      name: 'William Coimbra',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'A ferramenta veio completa, junto com equipamentos de segurança, o material é bom, chegou rápido, gostei bastante da minha compra.',
+      images: [
+        {
+          src: '/reviews/avaliacao-3.webp',
+          alt: 'Kit completo da Fixadora Finca Pino recebido por cliente',
+        },
+      ],
+    },
+    {
+      name: 'Marcos Tenório',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Bem seguro, aconselho usar luvas por conta da pólvora, protetor auricular pois o barulho é bem alto e o óculos de proteção para não correr riscos de voar partículas no olho. Fiz o teste numa madeira velha aqui e o resultado é excelente!!! Vai funcionar perfeitamente para o que preciso!',
+      images: [
+        {
+          src: '/reviews/avaliacao-4.webp',
+          alt: 'Fixadora Finca Pino e kit de pinos recebidos por cliente',
+        },
+      ],
+    },
+    {
+      name: 'Alfrey Santos',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Recomendo demais o produto, chegou no prazo e assim que chegou eu já testei, um dia depois usei em uma obra na fixação de alguns suportes e agilizou demais no serviço. Top demais!!',
+      images: [
+        {
+          src: '/reviews/avaliacao-5.webp',
+          alt: 'Fixadora Finca Pino e acessórios de segurança recebidos por cliente',
+        },
+      ],
+    },
+    {
+      name: 'Jorge Sousa',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Muito boa em superfícies resistentes. Pode comprar sem medo, vai agilizar muito o serviço.',
+      images: [
+        {
+          src: '/reviews/avaliacao-6.webp',
+          alt: 'Maleta da Fixadora Finca Pino aberta, recebida por cliente',
+        },
+      ],
+    },
+  ],
   faq: [
     {
       question: 'Para quais tipos de pintura ela é indicada?',
