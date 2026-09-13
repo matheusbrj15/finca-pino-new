@@ -69,6 +69,10 @@ export const product: Product = {
       alt: 'Especificações da Serra Tecepo: motor brushless 1280W, 7200 RPM, disco 150mm, bateria 21V',
     },
     {
+      src: '/product/serra-tecepo-tecnologia.png',
+      alt: 'Tecnologia do motor brushless da Serra Tecepo: mais torque, vida útil e autonomia',
+    },
+    {
       src: '/product/serra-tecepo-aplicacoes.png',
       alt: 'Serra Tecepo em uso: corte em metal, PVC, madeira e azulejos',
     },
@@ -86,7 +90,7 @@ export const product: Product = {
     {
       title: 'Cortes precisos em múltiplos materiais',
       description:
-        'Disco de 150 mm (furo 20 mm) apto para madeira, metal, PVC e azulejos, com profundidade de corte de até 54 mm a 90°.',
+        'Disco de 150 mm (furo 20 mm) apto para madeira, metal, PVC e azulejos, com profundidade de corte de até 56 mm a 90°.',
     },
     {
       title: 'Ajuste de ângulo de inclinação',
@@ -115,7 +119,7 @@ export const product: Product = {
     { label: 'Tensão', value: 'DC 21V' },
     { label: 'Velocidade sem carga', value: '0–7200 rpm' },
     { label: 'Diâmetro da lâmina', value: '150 mm (furo 20 mm)' },
-    { label: 'Profundidade de corte a 90°', value: '54 mm' },
+    { label: 'Profundidade de corte a 90°', value: '56 mm' },
     { label: 'Profundidade de corte a 45°', value: '32 mm' },
     { label: 'Ajuste de inclinação', value: '0–45°' },
     { label: 'Cor', value: 'Verde-limão' },
@@ -143,7 +147,7 @@ export const product: Product = {
     {
       question: 'É possível ajustar o ângulo de corte?',
       answer:
-        'Sim. A inclinação é regulável de 0° a 45°, com profundidade máxima de 54 mm a 90° e 32 mm a 45°.',
+        'Sim. A inclinação é regulável de 0° a 45°, com profundidade máxima de 56 mm a 90° e 32 mm a 45°.',
     },
     {
       question: 'Quantas baterias acompanham o produto?',
