@@ -35,7 +35,7 @@ export type Product = {
   price: number;
   oldPrice: number | null;
   checkoutUrl: string | null;
-  availableVoltages: readonly ['21V'];
+  availableVoltages: readonly ['48V'];
   images: ProductImage[];
   benefits: ProductBenefit[];
   applications: string[];
@@ -47,200 +47,119 @@ export type Product = {
 
 // Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null =
-  'https://seguro.final-agora-br.shop/api/public/shopify?product=906956689987&store=9069';
+export const PRODUCT_CHECKOUT_URL: string | null = null;
 
 export const product: Product = {
-  name: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V',
-  shortName: 'Tecepo Serra Circular 21V',
-  eyebrow: 'SERRA CIRCULAR SEM FIO • MOTOR BRUSHLESS',
+  name: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" 3 em 1 Com Peças',
+  shortName: 'Nakasaki Chave de Impacto 48V',
+  eyebrow: 'CHAVE DE IMPACTO ELÉTRICA • MOTOR BRUSHLESS 48V',
   description:
-    'Serra circular elétrica sem fio, motor brushless de alta potência, disco de 150mm e duas baterias 21V inclusas para cortes profissionais em madeira, metal, PVC e azulejos.',
-  price: 89.9,
-  oldPrice: 249.9,
+    'Chave de impacto elétrica sem fio, motor brushless com 350 N.m de torque, painel com 2 modos de uso e encaixe 1/2". Acompanha 2 baterias 48V, carregador bivolt, 3 soquetes e maleta reforçada.',
+  price: 276.89,
+  oldPrice: 309.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
-  availableVoltages: ['21V'],
+  availableVoltages: ['48V'],
   images: [
     {
-      src: '/product/serra-tecepo-principal.png',
-      alt: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm em composição principal com 2 baterias 21V',
+      src: '/product/chave-impacto-principal.png',
+      alt: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V em composição principal com maleta, 2 baterias e soquetes',
     },
     {
-      src: '/product/serra-tecepo-detalhes.png',
-      alt: 'Detalhes da Serra Tecepo: trava de segurança, cabo ergonômico, bateria 21V, motor sem escovas e ajuste de ângulo',
+      src: '/product/chave-impacto-detalhes.png',
+      alt: 'Detalhes da Chave de Impacto Nakasaki: encaixe 1/2", bateria 48V 4.0Ah, lanterna LED, chave de rotação e gatilho adaptativo',
     },
     {
-      src: '/product/serra-tecepo-aplicacoes.png',
-      alt: 'Cenários aplicáveis da Serra Tecepo: corte em madeira, PVC, metal e cerâmica/azulejos',
+      src: '/product/chave-impacto-aplicacoes.png',
+      alt: 'Locais de uso da Chave de Impacto Nakasaki: marcenaria, mecânica, construção e manutenção',
     },
     {
-      src: '/product/serra-tecepo-kit.png',
-      alt: 'Itens inclusos: serra, 2 baterias 21V, 2 lâminas de corte, óculos, luvas, carregador bivolt, chave e manual',
+      src: '/product/chave-impacto-kit.png',
+      alt: 'Itens inclusos: chave de impacto, 2 baterias 48V, carregador, trava de chave e soquetes 19mm, 21mm e 22mm',
     },
   ],
   benefits: [
     {
       title: 'Motor brushless de alta potência',
       description:
-        '1280 W com motor sem escovas (brushless), para mais durabilidade, menos manutenção e maior aproveitamento da bateria.',
+        'Torque máximo de 350 N.m com motor sem escovas (brushless), para mais força, durabilidade e menor desgaste da ferramenta.',
     },
     {
-      title: 'Cortes precisos em múltiplos materiais',
+      title: 'Painel inteligente com 2 modos de uso',
       description:
-        'Disco de 150 mm (furo 20 mm) apto para madeira, metal, PVC e azulejos, com profundidade de corte de até 56 mm a 90°.',
+        'Escolha entre rotação contínua para máxima agilidade ou o modo cadenciado, que evita espanar ou danificar parafusos e porcas.',
     },
     {
-      title: 'Ajuste de ângulo de inclinação',
+      title: 'Gatilho adaptativo e alta velocidade',
       description:
-        'Inclinação regulável de 0° a 45° para cortes angulados com precisão em diferentes espessuras de material.',
+        'Velocidade de rotação de até 3300 RPM e impacto de até 2400 BPM, controlados pela pressão exercida no gatilho.',
     },
     {
-      title: 'Autonomia para o dia todo',
+      title: 'Autonomia com 2 baterias 48V',
       description:
-        'Acompanha 2 baterias 21V 4.0Ah e carregador, para trocar e continuar o serviço sem esperar recarregar.',
+        'Acompanha 2 baterias de lítio 48V 4.0Ah e carregador bivolt, para trocar e continuar o serviço sem esperar recarregar.',
     },
   ],
   applications: [
-    'Madeira',
-    'Metal',
-    'PVC',
-    'Azulejos',
-    'Compensado',
-    'MDF',
+    'Marcenaria',
+    'Mecânica',
+    'Construção civil',
+    'Manutenção geral',
+    'Montagem de móveis',
+    'Reparos automotivos',
   ],
   specifications: [
-    { label: 'Marca / Linha', value: 'Tecepo Professional' },
-    { label: 'Modelo', value: 'M14-4519' },
+    { label: 'Marca / Linha', value: 'Nakasaki Professional' },
     { label: 'Motor', value: 'Sem escovas (brushless)' },
-    { label: 'Potência', value: '1280 W (1,28 kW)' },
-    { label: 'Tensão', value: 'DC 21V' },
-    { label: 'Velocidade sem carga', value: '0–7200 rpm' },
-    { label: 'Diâmetro da lâmina', value: '150 mm (furo 20 mm)' },
-    { label: 'Profundidade de corte a 90°', value: '56 mm' },
-    { label: 'Profundidade de corte a 45°', value: '32 mm' },
-    { label: 'Ajuste de inclinação', value: '0–45°' },
-    { label: 'Cor', value: 'Verde-limão' },
+    { label: 'Torque máximo', value: '350 N.m' },
+    { label: 'Velocidade de rotação', value: '0–3300 RPM' },
+    { label: 'Velocidade de impacto', value: '0–2400 BPM' },
+    { label: 'Encaixe do eixo', value: '1/2" (meia polegada)' },
+    { label: 'Bateria', value: '48V Li-Ion 4.0Ah (2 unidades)' },
+    { label: 'Carregador', value: 'Bivolt (110V/220V)' },
+    { label: 'Sistema de reversão', value: 'Sim (aperta e desaperta)' },
+    { label: 'Cor', value: 'Amarelo / preto' },
   ],
   kitContents: [
-    '1 serra circular Tecepo sem fio',
-    '2 baterias 21V',
-    '2 lâminas de corte',
-    '1 óculos de proteção',
-    '1 par de luvas',
+    '1 Chave de Impacto Elétrica com encaixe 1/2"',
+    '2 baterias de lítio 48V (4.0Ah)',
     '1 carregador bivolt',
-    '1 chave de manutenção',
-    '1 manual de instruções',
+    '1 trava de segurança da chave',
+    '1 soquete sextavado 19mm',
+    '1 soquete sextavado 21mm',
+    '1 soquete sextavado 22mm',
+    '1 maleta de transporte reforçada',
   ],
-  reviews: [
-    {
-      name: 'Lucas Almeida',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Ela é muito forte as baterias duram, não travou nenhuma vez. A única ressalva é o protetor de disco, as vezes ele trava e acaba atrapalhando o corte. Valeu 👍🏾.',
-      images: [
-        {
-          src: '/reviews/avaliacao-1.webp',
-          alt: 'Foto de cliente: caixa da Serra Circular Tecepo recebida lacrada',
-        },
-      ],
-    },
-    {
-      name: 'Jorge Oliveira',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'O produto é muito bom. Recomendo.',
-      images: [
-        {
-          src: '/reviews/avaliacao-2.webp',
-          alt: 'Foto de cliente: Serra Circular Tecepo dentro da caixa no desembalo',
-        },
-      ],
-    },
-    {
-      name: 'Marco Santos',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Esta serra da tecepo é surpreendentemente robusta. Cortei pernamanca em madeira de lei com facilidade. A rotação caiu pouco. Bateria top. Construção muito boa. Não vai substituir uma profissional, porém, para certos trabalhos rápidos ela é muito boa.',
-      images: [
-        {
-          src: '/reviews/avaliacao-3.webp',
-          alt: 'Foto de cliente: kit completo da Serra Circular Tecepo sobre a bancada',
-        },
-      ],
-    },
-    {
-      name: 'Mauricio Lima',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Máquina muito boa.',
-      images: [
-        {
-          src: '/reviews/avaliacao-4.webp',
-          alt: 'Foto de cliente: acessórios da Serra Circular Tecepo, baterias, lâmina e carregador',
-        },
-      ],
-    },
-    {
-      name: 'Romulo Alcantara',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Muito bom forte e com baterias de 4 amp real vale cada centavo só as baterias ja paga.',
-      images: [
-        {
-          src: '/reviews/avaliacao-5.webp',
-          alt: 'Foto de cliente: Serra Circular Tecepo sobre a mesa',
-        },
-      ],
-    },
-    {
-      name: 'Guilherme Coimbra',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Qualidade muito boa! valeu muito a compra.',
-      images: [
-        {
-          src: '/reviews/avaliacao-6.webp',
-          alt: 'Foto de cliente utilizando a Serra Circular Tecepo em uma parede',
-        },
-      ],
-    },
-  ],
+  reviews: [],
   faq: [
     {
-      question: 'Para quais materiais essa serra é indicada?',
+      question: 'Para quais usos essa chave de impacto é indicada?',
       answer:
-        'A Tecepo Professional é indicada para cortes em madeira, metal, PVC e azulejos, entre outros materiais compatíveis com a lâmina de 150 mm.',
+        'É indicada para marcenaria, mecânica, construção civil e manutenção geral, apertando e desapertando parafusos e porcas com rapidez e segurança.',
     },
     {
-      question: 'A serra funciona sem fio, só com bateria?',
+      question: 'A chave funciona sem fio, só com bateria?',
       answer:
-        'Sim. É uma serra circular elétrica sem fio, com motor brushless de 21V, e acompanha duas baterias 4.0Ah e um carregador.',
+        'Sim. É uma chave de impacto elétrica sem fio, com motor brushless de 48V, e acompanha 2 baterias de 4.0Ah e 1 carregador bivolt.',
     },
     {
-      question: 'É possível ajustar o ângulo de corte?',
+      question: 'É possível controlar a força e o modo de uso?',
       answer:
-        'Sim. A inclinação é regulável de 0° a 45°, com profundidade máxima de 56 mm a 90° e 32 mm a 45°.',
+        'Sim. O painel de controle tem 2 modos: rotação contínua livre e modo cadenciado com parada automática, que ajuda a não danificar a rosca do parafuso ou da porca.',
     },
     {
       question: 'Quantas baterias acompanham o produto?',
       answer:
-        'Acompanham 2 baterias de 21V 4.0Ah e 1 carregador, para revezar e manter o trabalho sem interrupção.',
+        'Acompanham 2 baterias de 48V 4.0Ah e 1 carregador bivolt, para revezar e manter o trabalho sem interrupção.',
     },
     {
       question: 'O que vem na caixa?',
       answer:
-        'Acompanha a serra, 2 baterias 21V, 2 lâminas de corte, 1 óculos de proteção, 1 par de luvas, 1 carregador bivolt, 1 chave de manutenção e 1 manual de instruções.',
+        'Acompanha a chave de impacto, 2 baterias 48V, 1 carregador bivolt, 1 trava de segurança, 3 soquetes (19mm, 21mm e 22mm) e 1 maleta de transporte reforçada.',
     },
     {
-      question: 'A lâmina pode ser trocada?',
+      question: 'Os soquetes podem ser trocados por outros?',
       answer:
-        'Sim. O produto já acompanha 2 lâminas de reserva de 150 mm (furo de 20 mm), compatíveis com o disco original.',
+        'Sim. O encaixe de 1/2" é o padrão mais comum do mercado e compatível com uma grande variedade de soquetes e ponteiras profissionais.',
     },
     {
       question: 'Qual é a garantia?',

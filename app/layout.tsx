@@ -13,9 +13,9 @@ function getMetaPixelScript(pixelId: string) {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V | Vitrine Mix',
+  title: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" | Vitrine Mix',
   description:
-    'Serra Circular Elétrica Tecepo Profissional Sem Fio, motor brushless de 1280W, disco de 150mm e duas baterias 21V inclusas.',
+    'Kit Chave de Impacto Elétrica Nakasaki 48V, motor brushless com 350 N.m de torque, 2 baterias, carregador bivolt e 3 soquetes inclusos.',
   alternates: {
     canonical: '/',
   },
@@ -27,25 +27,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V | Vitrine Mix',
+    title: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" | Vitrine Mix',
     description:
-      'Motor brushless de alta potência e cortes precisos em madeira, metal, PVC e azulejos.',
+      'Motor brushless de alta potência, 350 N.m de torque e painel com 2 modos de uso.',
     siteName: 'Vitrine Mix',
     images: [
       {
-        url: '/product/serra-tecepo-principal.png',
-        width: 1448,
-        height: 1086,
-        alt: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm',
+        url: '/product/chave-impacto-principal.png',
+        width: 1024,
+        height: 1024,
+        alt: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Serra Tecepo Profissional 150mm 21V | Vitrine Mix',
+    title: 'Chave de Impacto Nakasaki 48V Brushless | Vitrine Mix',
     description:
-      'Serra circular elétrica sem fio com motor brushless de 1280W.',
-    images: ['/product/serra-tecepo-principal.png'],
+      'Chave de impacto elétrica sem fio com motor brushless de 350 N.m de torque.',
+    images: ['/product/chave-impacto-principal.png'],
   },
 };
 
