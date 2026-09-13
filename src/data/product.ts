@@ -131,7 +131,86 @@ export const product: Product = {
     '1 chave de manutenção',
     '1 manual de instruções',
   ],
-  reviews: [],
+  reviews: [
+    {
+      name: 'Lucas Almeida',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Ela é muito forte as baterias duram, não travou nenhuma vez. A única ressalva é o protetor de disco, as vezes ele trava e acaba atrapalhando o corte. Valeu 👍🏾.',
+      images: [
+        {
+          src: '/reviews/avaliacao-1.webp',
+          alt: 'Foto de cliente: caixa da Serra Circular Tecepo recebida lacrada',
+        },
+      ],
+    },
+    {
+      name: 'Jorge Oliveira',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'O produto é muito bom. Recomendo.',
+      images: [
+        {
+          src: '/reviews/avaliacao-2.webp',
+          alt: 'Foto de cliente: Serra Circular Tecepo dentro da caixa no desembalo',
+        },
+      ],
+    },
+    {
+      name: 'Marco Santos',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Esta serra da tecepo é surpreendentemente robusta. Cortei pernamanca em madeira de lei com facilidade. A rotação caiu pouco. Bateria top. Construção muito boa. Não vai substituir uma profissional, porém, para certos trabalhos rápidos ela é muito boa.',
+      images: [
+        {
+          src: '/reviews/avaliacao-3.webp',
+          alt: 'Foto de cliente: kit completo da Serra Circular Tecepo sobre a bancada',
+        },
+      ],
+    },
+    {
+      name: 'Mauricio Lima',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Máquina muito boa.',
+      images: [
+        {
+          src: '/reviews/avaliacao-4.webp',
+          alt: 'Foto de cliente: acessórios da Serra Circular Tecepo, baterias, lâmina e carregador',
+        },
+      ],
+    },
+    {
+      name: 'Romulo Alcantara',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Muito bom forte e com baterias de 4 amp real vale cada centavo só as baterias ja paga.',
+      images: [
+        {
+          src: '/reviews/avaliacao-5.webp',
+          alt: 'Foto de cliente: Serra Circular Tecepo sobre a mesa',
+        },
+      ],
+    },
+    {
+      name: 'Guilherme Coimbra',
+      city: '',
+      rating: 5,
+      verified: false,
+      text: 'Qualidade muito boa! valeu muito a compra.',
+      images: [
+        {
+          src: '/reviews/avaliacao-6.webp',
+          alt: 'Foto de cliente utilizando a Serra Circular Tecepo em uma parede',
+        },
+      ],
+    },
+  ],
   faq: [
     {
       question: 'Para quais materiais essa serra é indicada?',
