@@ -13,9 +13,9 @@ function getMetaPixelScript(pixelId: string) {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 | Vitrine Mix',
+  title: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V | Vitrine Mix',
   description:
-    'Máquina de Pintura Airless Menegotti MMA PRO 1000 profissional, com motor de 1000 W, pressão de até 214 bar e vazão de até 2 L/min.',
+    'Serra Circular Elétrica Tecepo Profissional Sem Fio, motor brushless de 1280W, disco de 150mm e duas baterias 21V inclusas.',
   alternates: {
     canonical: '/',
   },
@@ -27,25 +27,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 | Vitrine Mix',
+    title: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V | Vitrine Mix',
     description:
-      'Alta pressão e produtividade para pinturas com acabamento uniforme.',
+      'Motor brushless de alta potência e cortes precisos em madeira, metal, PVC e azulejos.',
     siteName: 'Vitrine Mix',
     images: [
       {
-        url: '/product/mma-pro-1000-direita.jpg',
-        width: 1024,
-        height: 749,
-        alt: 'Máquina de Pintura Airless Menegotti MMA PRO 1000',
+        url: '/product/serra-tecepo-principal.png',
+        width: 1448,
+        height: 1086,
+        alt: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Menegotti MMA PRO 1000 | Vitrine Mix',
+    title: 'Serra Tecepo Profissional 150mm 21V | Vitrine Mix',
     description:
-      'Máquina de pintura Airless profissional com motor de 1000 W.',
-    images: ['/product/mma-pro-1000-direita.jpg'],
+      'Serra circular elétrica sem fio com motor brushless de 1280W.',
+    images: ['/product/serra-tecepo-principal.png'],
   },
 };
 

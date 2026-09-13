@@ -35,7 +35,7 @@ export type Product = {
   price: number;
   oldPrice: number | null;
   checkoutUrl: string | null;
-  availableVoltages: readonly ['127V', '220V'];
+  availableVoltages: readonly ['21V'];
   images: ProductImage[];
   benefits: ProductBenefit[];
   applications: string[];
@@ -45,198 +45,120 @@ export type Product = {
   faq: ProductFaq[];
 };
 
-// Cole aqui a URL externa da Zedy quando ela estiver disponível.
+// Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null =
-  'https://seguro.final-agora-br.shop/api/public/shopify?product=906917623286&store=9069';
+export const PRODUCT_CHECKOUT_URL: string | null = null;
 
 export const product: Product = {
-  name: 'Fixadora Finca Pino Profissional Ação Direta 27mm Reforçada',
-  shortName: 'Menegotti MMA PRO 1000',
-  eyebrow: 'AIRLESS PROFISSIONAL • 1000 W',
+  name: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V',
+  shortName: 'Tecepo Serra Circular 21V',
+  eyebrow: 'SERRA CIRCULAR SEM FIO • MOTOR BRUSHLESS',
   description:
-    'Alta pressão e maior produtividade para aplicar tintas com acabamento uniforme em diferentes tipos de projeto.',
-  price: 79.9,
-  oldPrice: 189.9,
+    'Serra circular elétrica sem fio, motor brushless de alta potência, disco de 150mm e duas baterias 21V inclusas para cortes profissionais em madeira, metal, PVC e azulejos.',
+  price: 559,
+  oldPrice: 799,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
-  availableVoltages: ['127V', '220V'],
+  availableVoltages: ['21V'],
   images: [
     {
-      src: '/product/finca-pino-principal.png',
-      alt: 'Fixadora Finca Pino Profissional Ação Direta 27mm em composição principal',
+      src: '/product/serra-tecepo-principal.png',
+      alt: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm em composição principal',
     },
     {
-      src: '/product/finca-pino-performance.png',
-      alt: 'Especificações da Fixadora Finca Pino: 27mm, ação direta, kits de 50/100/200 pinos',
+      src: '/product/serra-tecepo-performance.png',
+      alt: 'Especificações da Serra Tecepo: motor brushless 1280W, 7200 RPM, disco 150mm, bateria 21V',
     },
     {
-      src: '/product/finca-pino-aplicacoes.png',
-      alt: 'Fixadora Finca Pino em uso: madeira, rodapé, molduras, gesso e MDF',
+      src: '/product/serra-tecepo-aplicacoes.png',
+      alt: 'Serra Tecepo em uso: corte em metal, PVC, madeira e azulejos',
     },
     {
-      src: '/product/finca-pino-kit.png',
-      alt: 'O que vem na caixa: fixadora, kit de pinos, óculos de proteção e maleta com acessórios',
+      src: '/product/serra-tecepo-kit.png',
+      alt: 'O que vem na caixa: serra, 2 baterias 21V, carregador, 2 lâminas reserva, óculos e luvas',
     },
   ],
   benefits: [
     {
-      title: 'Alta pressão para produzir mais',
+      title: 'Motor brushless de alta potência',
       description:
-        'Pressão máxima de 214 bar e vazão máxima de 2,0 L/min para aplicações profissionais.',
+        '1280 W com motor sem escovas (brushless), para mais durabilidade, menos manutenção e maior aproveitamento da bateria.',
     },
     {
-      title: 'Controle durante a aplicação',
+      title: 'Cortes precisos em múltiplos materiais',
       description:
-        'Regulador de pressão integrado para adequar o trabalho ao material e ao acabamento desejado.',
+        'Disco de 150 mm (furo 20 mm) apto para madeira, metal, PVC e azulejos, com profundidade de corte de até 54 mm a 90°.',
     },
     {
-      title: 'Versátil para diferentes materiais',
+      title: 'Ajuste de ângulo de inclinação',
       description:
-        'Indicada para tinta acrílica, látex, verniz e PU, sempre respeitando a viscosidade recomendada.',
+        'Inclinação regulável de 0° a 45° para cortes angulados com precisão em diferentes espessuras de material.',
     },
     {
-      title: 'Alcance para projetos maiores',
+      title: 'Autonomia para o dia todo',
       description:
-        'Acompanha mangueira de 15 m e prolongador de 50 cm para ampliar a mobilidade no trabalho.',
+        'Acompanha 2 baterias 21V 4.0Ah e carregador, para trocar e continuar o serviço sem esperar recarregar.',
     },
   ],
   applications: [
-    'Paredes',
-    'Telhados',
-    'Pisos',
-    'Cercas',
-    'Garagens',
-    'Móveis',
-    'Contêineres',
+    'Madeira',
+    'Metal',
+    'PVC',
+    'Azulejos',
+    'Compensado',
+    'MDF',
   ],
   specifications: [
-    { label: 'Potência', value: '1000 W' },
-    { label: 'Pressão máxima', value: '214 bar (21,4 MPa)' },
-    { label: 'Vazão máxima', value: '2,0 L/min' },
-    { label: 'Mangueira', value: '15 m' },
-    { label: 'Bico máximo', value: '0,021” (0,53 mm)' },
-    { label: 'Peso', value: '15,2 kg' },
-    { label: 'Dimensões', value: '480 × 360 × 405 mm' },
-    { label: 'Voltagens', value: '127 V ou 220 V' },
+    { label: 'Marca / Linha', value: 'Tecepo Professional' },
+    { label: 'Modelo', value: 'M14-4519' },
+    { label: 'Motor', value: 'Sem escovas (brushless)' },
+    { label: 'Potência', value: '1280 W (1,28 kW)' },
+    { label: 'Tensão', value: 'DC 21V' },
+    { label: 'Velocidade sem carga', value: '0–7200 rpm' },
+    { label: 'Diâmetro da lâmina', value: '150 mm (furo 20 mm)' },
+    { label: 'Profundidade de corte a 90°', value: '54 mm' },
+    { label: 'Profundidade de corte a 45°', value: '32 mm' },
+    { label: 'Ajuste de inclinação', value: '0–45°' },
+    { label: 'Cor', value: 'Verde-limão' },
   ],
   kitContents: [
-    '2 anéis de vedação',
-    '2 chaves fixas 17 × 19 mm',
-    '1 prolongador para pistola de 50 cm',
-    '1 pistola de projeção com bico 519 e filtro branco malha 50',
-    '1 bisnaga de óleo',
-    '1 mangueira de 15 m',
+    '1 serra circular Tecepo 21V',
+    '2 baterias 21V 4.0Ah',
+    '1 carregador rápido',
+    '2 lâminas de reserva 150 mm',
+    '1 óculos de proteção',
+    '1 par de luvas',
   ],
-  reviews: [
-    {
-      name: 'Leonardo Casemiro',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Muito forte a fixação, super útil, facilita o trabalho, a precisão, e a segurança! Super indico',
-      images: [
-        {
-          src: '/reviews/avaliacao-1.webp',
-          alt: 'Fixadora Finca Pino recebida por cliente, dentro da maleta',
-        },
-      ],
-    },
-    {
-      name: 'Daniele Costa',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Segurança foi pensada na elaboração deste material, pois é bastante seguro e fácil de usar. Recomendo que usem bastante, pois facilita muito o trabalho, e ajuda na produção.',
-      images: [
-        {
-          src: '/reviews/avaliacao-2.webp',
-          alt: 'Fixadora Finca Pino e acessórios organizados na maleta',
-        },
-      ],
-    },
-    {
-      name: 'William Coimbra',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'A ferramenta veio completa, junto com equipamentos de segurança, o material é bom, chegou rápido, gostei bastante da minha compra.',
-      images: [
-        {
-          src: '/reviews/avaliacao-3.webp',
-          alt: 'Kit completo da Fixadora Finca Pino recebido por cliente',
-        },
-      ],
-    },
-    {
-      name: 'Marcos Tenório',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Bem seguro, aconselho usar luvas por conta da pólvora, protetor auricular pois o barulho é bem alto e o óculos de proteção para não correr riscos de voar partículas no olho. Fiz o teste numa madeira velha aqui e o resultado é excelente!!! Vai funcionar perfeitamente para o que preciso!',
-      images: [
-        {
-          src: '/reviews/avaliacao-4.webp',
-          alt: 'Fixadora Finca Pino e kit de pinos recebidos por cliente',
-        },
-      ],
-    },
-    {
-      name: 'Alfrey Santos',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Recomendo demais o produto, chegou no prazo e assim que chegou eu já testei, um dia depois usei em uma obra na fixação de alguns suportes e agilizou demais no serviço. Top demais!!',
-      images: [
-        {
-          src: '/reviews/avaliacao-5.webp',
-          alt: 'Fixadora Finca Pino e acessórios de segurança recebidos por cliente',
-        },
-      ],
-    },
-    {
-      name: 'Jorge Sousa',
-      city: '',
-      rating: 5,
-      verified: false,
-      text: 'Muito boa em superfícies resistentes. Pode comprar sem medo, vai agilizar muito o serviço.',
-      images: [
-        {
-          src: '/reviews/avaliacao-6.webp',
-          alt: 'Maleta da Fixadora Finca Pino aberta, recebida por cliente',
-        },
-      ],
-    },
-  ],
+  reviews: [],
   faq: [
     {
-      question: 'Para quais tipos de pintura ela é indicada?',
+      question: 'Para quais materiais essa serra é indicada?',
       answer:
-        'O manual técnico indica aplicações em paredes, telhados, pisos, cercas, garagens, móveis e contêineres, entre outros trabalhos compatíveis.',
+        'A Tecepo Professional é indicada para cortes em madeira, metal, PVC e azulejos, entre outros materiais compatíveis com a lâmina de 150 mm.',
     },
     {
-      question: 'A máquina é indicada para uso profissional?',
+      question: 'A serra funciona sem fio, só com bateria?',
       answer:
-        'Sim. A Menegotti classifica a MMA PRO 1000 para aplicações profissionais mais pesadas, respeitando os limites técnicos e as instruções do manual.',
+        'Sim. É uma serra circular elétrica sem fio, com motor brushless de 21V, e acompanha duas baterias 4.0Ah e um carregador.',
     },
     {
-      question: 'Quais tipos de tinta podem ser utilizados?',
+      question: 'É possível ajustar o ângulo de corte?',
       answer:
-        'A fabricante informa compatibilidade com tintas acrílicas, látex, vernizes e PU. A viscosidade e a diluição indicadas pelo fabricante da tinta devem ser verificadas antes do uso.',
+        'Sim. A inclinação é regulável de 0° a 45°, com profundidade máxima de 54 mm a 90° e 32 mm a 45°.',
     },
     {
-      question: 'É possível ajustar a pressão?',
+      question: 'Quantas baterias acompanham o produto?',
       answer:
-        'Sim. O equipamento possui regulador de pressão. O ajuste deve seguir o material, o bico utilizado e as orientações do manual técnico.',
+        'Acompanham 2 baterias de 21V 4.0Ah e 1 carregador, para revezar e manter o trabalho sem interrupção.',
     },
     {
-      question: 'O que acompanha o produto?',
+      question: 'O que vem na caixa?',
       answer:
-        'Acompanha mangueira de 15 m, pistola com bico 519 e filtro, prolongador de 50 cm, dois anéis de vedação, duas chaves fixas e uma bisnaga de óleo.',
+        'Acompanha a serra, 2 baterias 21V 4.0Ah, 1 carregador, 2 lâminas de reserva de 150 mm, 1 óculos de proteção e 1 par de luvas.',
     },
     {
-      question: 'Existem versões 127 V e 220 V?',
+      question: 'A lâmina pode ser trocada?',
       answer:
-        'Sim. A MMA PRO 1000 possui modelos de 127 V e 220 V. A seleção da voltagem será adicionada quando o checkout do produto estiver disponível.',
+        'Sim. O produto já acompanha 2 lâminas de reserva de 150 mm (furo de 20 mm), compatíveis com o disco original.',
     },
     {
       question: 'Qual é a garantia?',

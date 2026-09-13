@@ -23,8 +23,8 @@ export default function Home() {
       </section>
       <section className="bg-white px-[3px] py-6 sm:px-6 sm:py-10 lg:py-12" aria-label="Informações completas do produto">
         <img
-          src="/product/finca-pino-informativo.png"
-          alt="Informações completas da Fixadora Finca Pino: compatibilidade, segurança, passo a passo e pressão ajustável"
+          src="/product/serra-tecepo-informativo.png"
+          alt="Informações completas da Serra Circular Tecepo: especificações, corte multimaterial, ângulo de corte e o que vem na caixa"
           className="mx-auto block h-auto w-full max-w-none object-contain sm:max-w-[1180px]"
         />
       </section>

@@ -19,7 +19,7 @@ const currency = new Intl.NumberFormat('pt-BR', {
 
 export function PurchaseCard({ product }: { product: Product }) {
   const [remainingSeconds, setRemainingSeconds] = useState(10 * 60);
-  const originalPrice = 189.9;
+  const originalPrice = product.oldPrice ?? product.price;
   const discount = Math.round(((originalPrice - product.price) / originalPrice) * 100);
   const formattedPriceAmount = product.price.toLocaleString('pt-BR', {
     minimumFractionDigits: 2,
