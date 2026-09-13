@@ -47,7 +47,8 @@ export type Product = {
 
 // Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null = null;
+export const PRODUCT_CHECKOUT_URL: string | null =
+  'https://seguro.final-agora-br.shop/api/public/shopify?product=906956689987&store=9069';
 
 export const product: Product = {
   name: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm 21V',
@@ -55,30 +56,26 @@ export const product: Product = {
   eyebrow: 'SERRA CIRCULAR SEM FIO • MOTOR BRUSHLESS',
   description:
     'Serra circular elétrica sem fio, motor brushless de alta potência, disco de 150mm e duas baterias 21V inclusas para cortes profissionais em madeira, metal, PVC e azulejos.',
-  price: 559,
-  oldPrice: 799,
+  price: 89.9,
+  oldPrice: 249.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
   availableVoltages: ['21V'],
   images: [
     {
       src: '/product/serra-tecepo-principal.png',
-      alt: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm em composição principal',
+      alt: 'Serra Circular Elétrica Tecepo Profissional Sem Fio 150mm em composição principal com 2 baterias 21V',
     },
     {
-      src: '/product/serra-tecepo-performance.png',
-      alt: 'Especificações da Serra Tecepo: motor brushless 1280W, 7200 RPM, disco 150mm, bateria 21V',
-    },
-    {
-      src: '/product/serra-tecepo-tecnologia.png',
-      alt: 'Tecnologia do motor brushless da Serra Tecepo: mais torque, vida útil e autonomia',
+      src: '/product/serra-tecepo-detalhes.png',
+      alt: 'Detalhes da Serra Tecepo: trava de segurança, cabo ergonômico, bateria 21V, motor sem escovas e ajuste de ângulo',
     },
     {
       src: '/product/serra-tecepo-aplicacoes.png',
-      alt: 'Serra Tecepo em uso: corte em metal, PVC, madeira e azulejos',
+      alt: 'Cenários aplicáveis da Serra Tecepo: corte em madeira, PVC, metal e cerâmica/azulejos',
     },
     {
       src: '/product/serra-tecepo-kit.png',
-      alt: 'O que vem na caixa: serra, 2 baterias 21V, carregador, 2 lâminas reserva, óculos e luvas',
+      alt: 'Itens inclusos: serra, 2 baterias 21V, 2 lâminas de corte, óculos, luvas, carregador bivolt, chave e manual',
     },
   ],
   benefits: [
@@ -125,12 +122,14 @@ export const product: Product = {
     { label: 'Cor', value: 'Verde-limão' },
   ],
   kitContents: [
-    '1 serra circular Tecepo 21V',
-    '2 baterias 21V 4.0Ah',
-    '1 carregador rápido',
-    '2 lâminas de reserva 150 mm',
+    '1 serra circular Tecepo sem fio',
+    '2 baterias 21V',
+    '2 lâminas de corte',
     '1 óculos de proteção',
     '1 par de luvas',
+    '1 carregador bivolt',
+    '1 chave de manutenção',
+    '1 manual de instruções',
   ],
   reviews: [],
   faq: [
@@ -157,7 +156,7 @@ export const product: Product = {
     {
       question: 'O que vem na caixa?',
       answer:
-        'Acompanha a serra, 2 baterias 21V 4.0Ah, 1 carregador, 2 lâminas de reserva de 150 mm, 1 óculos de proteção e 1 par de luvas.',
+        'Acompanha a serra, 2 baterias 21V, 2 lâminas de corte, 1 óculos de proteção, 1 par de luvas, 1 carregador bivolt, 1 chave de manutenção e 1 manual de instruções.',
     },
     {
       question: 'A lâmina pode ser trocada?',
