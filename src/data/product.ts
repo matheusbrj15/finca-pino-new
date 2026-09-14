@@ -143,7 +143,7 @@ export const product: Product = {
       images: [
         {
           src: '/reviews/avaliacao-1.webp',
-          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki em uso',
+          alt: 'Cliente usando a Chave de Impacto Nakasaki para soltar parafusos da roda do carro',
         },
       ],
     },
@@ -156,7 +156,7 @@ export const product: Product = {
       images: [
         {
           src: '/reviews/avaliacao-2.webp',
-          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki usada na roda do carro',
+          alt: 'Kit completo da Chave de Impacto Nakasaki recebido pelo cliente',
         },
       ],
     },
@@ -169,7 +169,7 @@ export const product: Product = {
       images: [
         {
           src: '/reviews/avaliacao-3.webp',
-          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki usada em roda de caminhão',
+          alt: 'Cliente segurando a Chave de Impacto Nakasaki recém-desembalada',
         },
       ],
     },
@@ -182,7 +182,7 @@ export const product: Product = {
       images: [
         {
           src: '/reviews/avaliacao-4.webp',
-          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki recebida completa',
+          alt: 'Chave de Impacto Nakasaki ainda na embalagem plástica dentro da maleta',
         },
       ],
     },
@@ -195,7 +195,7 @@ export const product: Product = {
       images: [
         {
           src: '/reviews/avaliacao-5.webp',
-          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki recebida',
+          alt: 'Maleta da Chave de Impacto Nakasaki com baterias, carregador e manual de instruções',
         },
       ],
     },
@@ -208,7 +208,7 @@ export const product: Product = {
       images: [
         {
           src: '/reviews/avaliacao-6.webp',
-          alt: 'Maleta completa da Chave de Impacto Nakasaki recebida por cliente',
+          alt: 'Cliente com a Chave de Impacto Nakasaki e a maleta completa',
         },
       ],
     },
