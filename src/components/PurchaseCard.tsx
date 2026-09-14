@@ -88,8 +88,8 @@ export function PurchaseCard({ product }: { product: Product }) {
       </div>
 
         <div className="bg-white px-3 py-3 sm:px-4 sm:py-4">
-          <div className="flex items-start gap-2">
-            <span className="mt-0.5 shrink-0 bg-[#ff6b00] px-2 py-1 text-[10px] font-black leading-none text-white">
+          <div className="flex flex-col items-start gap-1.5">
+            <span className="shrink-0 bg-[#ff6b00] px-2 py-1 text-[10px] font-black leading-none text-white">
               INDICADO
             </span>
             <h1 className="text-[14px] font-black leading-[1.25] tracking-[-0.02em] text-[#002870] sm:text-base">
