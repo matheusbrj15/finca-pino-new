@@ -55,8 +55,8 @@ export const product: Product = {
   eyebrow: 'CHAVE DE IMPACTO ELÉTRICA • MOTOR BRUSHLESS 48V',
   description:
     'Chave de impacto elétrica sem fio, motor brushless com 350 N.m de torque, painel com 2 modos de uso e encaixe 1/2". Acompanha 2 baterias 48V, carregador bivolt, 3 soquetes e maleta reforçada.',
-  price: 276.89,
-  oldPrice: 309.9,
+  price: 89.9,
+  oldPrice: 249.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
   availableVoltages: ['48V'],
   images: [
@@ -133,7 +133,86 @@ export const product: Product = {
     '1 soquete sextavado 22mm',
     '1 maleta de transporte reforçada',
   ],
-  reviews: [],
+  reviews: [
+    {
+      name: 'Lucas Almeida',
+      city: '',
+      rating: 5,
+      verified: true,
+      text: 'Muito bom, ótimo custo benefício, ferramenta bem forte, testei num carro que estava parado há 6 anos, produto top. Embalagem bem ruim, só um saco de lixo por volta da embalagem.',
+      images: [
+        {
+          src: '/reviews/avaliacao-1.webp',
+          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki em uso',
+        },
+      ],
+    },
+    {
+      name: 'Jorge Oliveira',
+      city: '',
+      rating: 5,
+      verified: true,
+      text: 'Produto bom, de boa qualidade, gostei muito, bem forte, usei nas rodas do meu carro, funcionou perfeitamente, torque bom, sem palavras.',
+      images: [
+        {
+          src: '/reviews/avaliacao-2.webp',
+          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki usada na roda do carro',
+        },
+      ],
+    },
+    {
+      name: 'Marco Santos',
+      city: '',
+      rating: 5,
+      verified: true,
+      text: 'Ótima ferramenta, tira até roda de caminhão, bem robusta e com ótimo custo benefício, acabamento excelente, me atendeu muito bem.',
+      images: [
+        {
+          src: '/reviews/avaliacao-3.webp',
+          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki usada em roda de caminhão',
+        },
+      ],
+    },
+    {
+      name: 'Mauricio Lima',
+      city: '',
+      rating: 5,
+      verified: true,
+      text: 'Veio certinho, bem embalado, completo, ainda fiz o teste e sim, é 48V.',
+      images: [
+        {
+          src: '/reviews/avaliacao-4.webp',
+          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki recebida completa',
+        },
+      ],
+    },
+    {
+      name: 'Romulo Alcantara',
+      city: '',
+      rating: 5,
+      verified: true,
+      text: 'Envio e entrega rápidos. Qualidade excelente, já é a segunda que compro, chegou tudo ok.',
+      images: [
+        {
+          src: '/reviews/avaliacao-5.webp',
+          alt: 'Foto enviada por cliente: Chave de Impacto Nakasaki recebida',
+        },
+      ],
+    },
+    {
+      name: 'Guilherme Coimbra',
+      city: '',
+      rating: 5,
+      verified: true,
+      text: 'Gostei muito da minha compra, só falta usar. Levou 3 dias pra chegar na minha cidade e mais 4 dias no centro de logística, um absurdo, a Shopee deveria ver isso. Fora isso, nota 10.',
+      images: [
+        {
+          src: '/reviews/avaliacao-6.webp',
+          alt: 'Maleta completa da Chave de Impacto Nakasaki recebida por cliente',
+        },
+      ],
+    },
+  ],
   faq: [
     {
       question: 'Para quais usos essa chave de impacto é indicada?',
