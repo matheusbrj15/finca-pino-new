@@ -47,14 +47,15 @@ export type Product = {
 
 // Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null = null;
+export const PRODUCT_CHECKOUT_URL: string | null =
+  'https://seguro.final-agora-br.shop/api/public/shopify?product=906962988774&store=9069';
 
 export const product: Product = {
   name: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" 3 em 1 Com Peças',
   shortName: 'Nakasaki Chave de Impacto 48V',
-  eyebrow: 'CHAVE DE IMPACTO ELÉTRICA • MOTOR BRUSHLESS 48V',
+  eyebrow: 'KIT 3 EM 1 • CHAVE DE IMPACTO, FURADEIRA E PARAFUSADEIRA • MOTOR BRUSHLESS 48V',
   description:
-    'Chave de impacto elétrica sem fio, motor brushless com 350 N.m de torque, painel com 2 modos de uso e encaixe 1/2". Acompanha 2 baterias 48V, carregador bivolt, 3 soquetes e maleta reforçada.',
+    'Kit 3 em 1: chave de impacto elétrica sem fio que também funciona como furadeira e parafusadeira com os adaptadores inclusos. Motor brushless com 350 N.m de torque, painel com 2 modos de uso e encaixe 1/2". Acompanha 2 baterias 48V, carregador bivolt, mandril para furadeira, adaptador para parafusadeira, pontas, brocas, 3 soquetes e maleta reforçada.',
   price: 89.9,
   oldPrice: 249.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
@@ -62,7 +63,7 @@ export const product: Product = {
   images: [
     {
       src: '/product/chave-impacto-principal.png',
-      alt: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V em composição principal com maleta, 2 baterias e soquetes',
+      alt: 'Kit 3 em 1 Chave de Impacto Nakasaki 48V com adaptadores de furadeira e parafusadeira, maleta, 2 baterias e soquetes',
     },
     {
       src: '/product/chave-impacto-detalhes.png',
@@ -125,6 +126,11 @@ export const product: Product = {
   ],
   kitContents: [
     '1 Chave de Impacto Elétrica com encaixe 1/2"',
+    '1 mandril adaptador para função furadeira',
+    '1 adaptador rápido para função parafusadeira',
+    '5 pontas de parafusadeira',
+    '2 brocas para furadeira',
+    '3 anéis limitadores de torque coloridos',
     '2 baterias de lítio 48V (4.0Ah)',
     '1 carregador bivolt',
     '1 trava de segurança da chave',
@@ -215,6 +221,11 @@ export const product: Product = {
   ],
   faq: [
     {
+      question: 'Como funciona o kit 3 em 1?',
+      answer:
+        'Além de chave de impacto, o kit acompanha um mandril adaptador para função furadeira e um adaptador rápido para função parafusadeira, permitindo furar e parafusar com a mesma ferramenta.',
+    },
+    {
       question: 'Para quais usos essa chave de impacto é indicada?',
       answer:
         'É indicada para marcenaria, mecânica, construção civil e manutenção geral, apertando e desapertando parafusos e porcas com rapidez e segurança.',
@@ -237,7 +248,7 @@ export const product: Product = {
     {
       question: 'O que vem na caixa?',
       answer:
-        'Acompanha a chave de impacto, 2 baterias 48V, 1 carregador bivolt, 1 trava de segurança, 3 soquetes (19mm, 21mm e 22mm) e 1 maleta de transporte reforçada.',
+        'Acompanha a chave de impacto, mandril para furadeira, adaptador para parafusadeira, pontas, brocas, 2 baterias 48V, 1 carregador bivolt, 1 trava de segurança, 3 soquetes (19mm, 21mm e 22mm) e 1 maleta de transporte reforçada.',
     },
     {
       question: 'Os soquetes podem ser trocados por outros?',
