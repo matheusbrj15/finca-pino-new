@@ -69,12 +69,16 @@ export const product: Product = {
       alt: 'Detalhes da Chave de Impacto Nakasaki: encaixe 1/2", bateria 48V 4.0Ah, lanterna LED, chave de rotação e gatilho adaptativo',
     },
     {
-      src: '/product/chave-impacto-aplicacoes.png',
-      alt: 'Locais de uso da Chave de Impacto Nakasaki: marcenaria, mecânica, construção e manutenção',
-    },
-    {
       src: '/product/chave-impacto-kit.png',
       alt: 'Itens inclusos: chave de impacto, 2 baterias 48V, carregador, trava de chave e soquetes 19mm, 21mm e 22mm',
+    },
+    {
+      src: '/product/chave-impacto-torque.png',
+      alt: 'Potência de torque da Chave de Impacto Nakasaki: até 350 N.m para apertar e soltar porcas e parafusos',
+    },
+    {
+      src: '/product/chave-impacto-aplicacoes.png',
+      alt: 'Locais de uso da Chave de Impacto Nakasaki: marcenaria, mecânica, construção e manutenção',
     },
   ],
   benefits: [
