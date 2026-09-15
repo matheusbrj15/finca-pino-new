@@ -66,7 +66,7 @@ export function PurchaseCard({ product }: { product: Product }) {
           </div>
 
           <div className="flex flex-col items-end justify-between px-2 py-3 text-right sm:px-4">
-            <span className="inline-flex items-center gap-1.5 whitespace-nowrap border border-[#ffb000] px-1.5 py-1 text-[8px] uppercase leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[10px]">
+            <span className="inline-flex items-center gap-1.5 whitespace-nowrap border border-[#ffb000] px-1.5 py-1 text-[11px] uppercase leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[13px]">
               <span className="grid size-4 shrink-0 place-items-center rounded-full bg-[#ffb000] sm:size-5">
                 <Zap className="size-2.5 fill-[#141414] text-[#141414] sm:size-3" />
               </span>
@@ -75,15 +75,15 @@ export function PurchaseCard({ product }: { product: Product }) {
               </span>
             </span>
             <div>
-              <span className="text-[8px] font-black uppercase text-white/80 sm:text-[9px]">TERMINA EM:</span>
+              <span className="text-[11px] font-black uppercase text-white/80 sm:text-[12px]">TERMINA EM:</span>
               <div
                 className="mt-1 flex items-center justify-end gap-1"
                 aria-label={`${countdown[0]} horas, ${countdown[1]} minutos e ${countdown[2]} segundos`}
               >
                 {countdown.map((value, index) => (
                   <span className="contents" key={index}>
-                    {index > 0 && <span className="text-[10px] font-black text-white">:</span>}
-                    <span className="grid h-6 min-w-6 place-items-center border border-white/50 bg-black/15 px-1 text-[10px] font-black text-white">
+                    {index > 0 && <span className="text-[13px] font-black text-white">:</span>}
+                    <span className="grid h-7 min-w-7 place-items-center border border-white/50 bg-black/15 px-1 text-[13px] font-black text-white">
                       {value}
                     </span>
                   </span>
