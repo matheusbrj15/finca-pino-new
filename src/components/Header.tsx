@@ -6,7 +6,7 @@ export function Header() {
       <div className="bg-[#ff6b00] px-4 py-1.5 text-center text-[11px] font-extrabold text-white sm:text-xs">
         ⚡ Frete Grátis + Envio Imediato
       </div>
-      <header className="border-b border-white/10 bg-[#002870] text-white">
+      <header className="border-b border-white/10 bg-[#141414] text-white">
         <div className="mx-auto grid h-14 w-full max-w-[1180px] grid-cols-[1fr_auto_1fr] items-center px-2 sm:h-16 sm:px-5 lg:px-8">
           <div className="flex justify-start">
             <button

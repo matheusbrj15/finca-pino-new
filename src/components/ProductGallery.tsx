@@ -49,7 +49,7 @@ export function ProductGallery({ images }: ProductGalleryProps) {
   return (
     <div id="top" className="w-full min-w-0">
       <div
-        className="relative touch-pan-y overflow-hidden border-0 bg-[#f7f9fc] shadow-none sm:rounded-[30px] sm:border sm:border-[#dbe4f0] sm:shadow-[0_20px_60px_rgba(0,40,112,0.08)]"
+        className="relative touch-pan-y overflow-hidden border-0 bg-[#f6f6f6] shadow-none sm:rounded-[30px] sm:border sm:border-[#e2e2e2] sm:shadow-[0_20px_60px_rgba(0,40,112,0.08)]"
         onTouchStart={(event) => {
           const touch = event.changedTouches[0];
           touchStart.current = { x: touch.clientX, y: touch.clientY };
@@ -115,7 +115,7 @@ export function ProductGallery({ images }: ProductGalleryProps) {
             <ChevronRight className="size-4" />
           </span>
         </button>
-        <span className="absolute bottom-2 right-2 rounded-full bg-[#002870] px-3 py-1 text-xs font-bold text-white sm:bottom-4 sm:right-4">
+        <span className="absolute bottom-2 right-2 rounded-full bg-[#141414] px-3 py-1 text-xs font-bold text-white sm:bottom-4 sm:right-4">
           {activeIndex + 1}/{images.length}
         </span>
       </div>

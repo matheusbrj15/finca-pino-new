@@ -15,7 +15,7 @@ const institutional = [
 
 export function Footer() {
   return (
-    <footer id="site-footer" className="bg-[#062e73] text-white">
+    <footer id="site-footer" className="bg-[#141414] text-white">
       <div className="mx-auto w-full max-w-[1180px] px-4 pb-4 pt-8 sm:px-6 sm:pb-5 sm:pt-9 lg:px-8">
         <div className="text-center">
           <p className="text-xl font-black leading-none tracking-[-0.045em] sm:text-2xl">
@@ -30,13 +30,13 @@ export function Footer() {
             <div className="mt-2.5 space-y-1.5 text-[13px] leading-5 text-white/88 sm:text-[15px]">
               <p>
                 E-mail:{' '}
-                <a className="break-all underline decoration-white/45 underline-offset-2 transition hover:text-[#9bc0ff]" href="mailto:contato@suportesac-vitrinemix.com">
+                <a className="break-all underline decoration-white/45 underline-offset-2 transition hover:text-[#ffb37a]" href="mailto:contato@suportesac-vitrinemix.com">
                   contato@suportesac-vitrinemix.com
                 </a>
               </p>
               <p>
                 WhatsApp:{' '}
-                <a className="underline decoration-white/45 underline-offset-2 transition hover:text-[#9bc0ff]" href="https://wa.me/551151985194" target="_blank" rel="noopener noreferrer">
+                <a className="underline decoration-white/45 underline-offset-2 transition hover:text-[#ffb37a]" href="https://wa.me/551151985194" target="_blank" rel="noopener noreferrer">
                   (11) 5198-5194
                 </a>
               </p>
@@ -62,7 +62,7 @@ export function Footer() {
           </section>
         </div>
 
-        <p className="mt-7 rounded-lg bg-[#103d80] px-4 py-2.5 text-[11.5px] leading-4 text-white/90 sm:mt-8 sm:px-5 sm:py-2.5 sm:text-[12.5px] sm:leading-4">
+        <p className="mt-7 rounded-lg bg-[#262626] px-4 py-2.5 text-[11.5px] leading-4 text-white/90 sm:mt-8 sm:px-5 sm:py-2.5 sm:text-[12.5px] sm:leading-4">
           Preços e condições exclusivos para compras neste site oficial, podendo variar com o tempo da oferta. Evite comprar produtos mais baratos ou de outras lojas, pois você pode estar sendo enganado por um golpista.
         </p>
 

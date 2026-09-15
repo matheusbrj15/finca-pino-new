@@ -47,11 +47,11 @@ export function PurchaseCard({ product }: { product: Product }) {
 
   return (
     <div className="flex min-w-0 flex-col justify-center">
-      <div className="grid min-h-[116px] grid-cols-[minmax(0,1fr)_122px] bg-[#002870] text-white sm:grid-cols-[minmax(0,1fr)_160px]">
+      <div className="grid min-h-[116px] grid-cols-[minmax(0,1fr)_122px] bg-[#141414] text-white sm:grid-cols-[minmax(0,1fr)_160px]">
           <div className="flex min-w-0 flex-col justify-center px-3 py-3 sm:px-5">
             <div className="flex items-center gap-2 text-[11px] font-semibold leading-none">
               <span className="line-through text-white/75">{currency.format(originalPrice)}</span>
-              <span className="bg-[#ffb000] px-1.5 py-1 text-[9px] font-black text-[#002870] sm:text-[10px]">
+              <span className="bg-[#ffb000] px-1.5 py-1 text-[9px] font-black text-[#141414] sm:text-[10px]">
                 {discount}% OFF
               </span>
             </div>
@@ -92,7 +92,7 @@ export function PurchaseCard({ product }: { product: Product }) {
             <span className="shrink-0 bg-[#ff6b00] px-2 py-1 text-[10px] font-black leading-none text-white">
               INDICADO
             </span>
-            <h1 className="text-[14px] font-black leading-[1.25] tracking-[-0.02em] text-[#002870] sm:text-base">
+            <h1 className="text-[14px] font-black leading-[1.25] tracking-[-0.02em] text-[#141414] sm:text-base">
               {product.name}
             </h1>
           </div>
@@ -100,15 +100,15 @@ export function PurchaseCard({ product }: { product: Product }) {
           <div className="mt-2.5 flex items-center justify-between gap-3">
             <div className="flex min-w-0 items-center gap-2 text-sm">
               <span className="whitespace-nowrap text-[16px] tracking-[-0.12em] text-[#ffb000]" aria-label="5 estrelas">★★★★★</span>
-              <strong className="text-[#34445c]">4,9</strong>
-              <span className="text-[#c4ceda]">|</span>
-              <span className="whitespace-nowrap text-xs text-[#647389]">4,2 mil avaliações</span>
+              <strong className="text-[#2a2a2a]">4,9</strong>
+              <span className="text-[#d6d6d6]">|</span>
+              <span className="whitespace-nowrap text-xs text-[#666666]">4,2 mil avaliações</span>
             </div>
-            <div className="flex shrink-0 items-center gap-1 text-[#617087]">
-              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#eaf1fb] hover:text-[#003b8f]" type="button" aria-label="Favoritar produto">
+            <div className="flex shrink-0 items-center gap-1 text-[#6b6b6b]">
+              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#ff6b00]" type="button" aria-label="Favoritar produto">
                 <Heart className="size-5" />
               </button>
-              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#eaf1fb] hover:text-[#003b8f]" type="button" aria-label="Compartilhar produto">
+              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#ff6b00]" type="button" aria-label="Compartilhar produto">
                 <Share2 className="size-5" />
               </button>
               <button className="grid size-9 place-items-center rounded-full text-[#12a83a] transition hover:bg-[#e9f8ee]" type="button" aria-label="Falar pelo WhatsApp">
@@ -117,9 +117,9 @@ export function PurchaseCard({ product }: { product: Product }) {
             </div>
           </div>
 
-          <div className="mt-3 border border-[#dbe4f0] bg-white p-3 shadow-[0_5px_16px_rgba(0,40,112,0.055)] sm:p-4">
+          <div className="mt-3 border border-[#e2e2e2] bg-white p-3 shadow-[0_5px_16px_rgba(0,40,112,0.055)] sm:p-4">
             <div className="flex items-center gap-3">
-              <span className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-full border border-[#dbe4f0] bg-white p-0.5">
+              <span className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-full border border-[#e2e2e2] bg-white p-0.5">
                 <img
                   src="/brand/vitrine-mix-logo-card.png"
                   alt="Logo Vitrine Mix"
@@ -127,28 +127,28 @@ export function PurchaseCard({ product }: { product: Product }) {
                 />
               </span>
               <div>
-                <p className="text-sm font-black leading-tight text-[#002870]">Vitrine Mix</p>
-                <p className="mt-0.5 text-[11px] text-[#647389]">Loja Oficial</p>
+                <p className="text-sm font-black leading-tight text-[#141414]">Vitrine Mix</p>
+                <p className="mt-0.5 text-[11px] text-[#666666]">Loja Oficial</p>
               </div>
             </div>
 
-            <div className="my-2.5 h-px bg-[#e2e9f2]" />
+            <div className="my-2.5 h-px bg-[#ececec]" />
 
-            <div className="grid grid-cols-3 divide-x divide-[#e2e9f2] text-center">
+            <div className="grid grid-cols-3 divide-x divide-[#ececec] text-center">
               <div className="min-w-0 px-1.5 sm:px-2">
                 <Star className="mx-auto size-4 text-[#ff6b00]" />
-                <strong className="mt-1.5 block text-xs font-black text-[#243650] sm:text-sm">4,9</strong>
-                <span className="mt-0.5 block text-[9px] leading-tight text-[#7a8798] sm:text-[10px]">Avaliações de clientes</span>
+                <strong className="mt-1.5 block text-xs font-black text-[#1f1f1f] sm:text-sm">4,9</strong>
+                <span className="mt-0.5 block text-[9px] leading-tight text-[#7a7a7a] sm:text-[10px]">Avaliações de clientes</span>
               </div>
               <div className="min-w-0 px-1.5 sm:px-2">
-                <ShoppingBag className="mx-auto size-4 text-[#003b8f]" />
-                <strong className="mt-1.5 block text-[10px] font-black leading-tight text-[#243650] sm:text-xs">Pedidos enviados</strong>
-                <span className="mt-0.5 block text-[9px] leading-tight text-[#7a8798] sm:text-[10px]">Clientes atendidos</span>
+                <ShoppingBag className="mx-auto size-4 text-[#ff6b00]" />
+                <strong className="mt-1.5 block text-[10px] font-black leading-tight text-[#1f1f1f] sm:text-xs">Pedidos enviados</strong>
+                <span className="mt-0.5 block text-[9px] leading-tight text-[#7a7a7a] sm:text-[10px]">Clientes atendidos</span>
               </div>
               <div className="min-w-0 px-1.5 sm:px-2">
                 <MessagesSquare className="mx-auto size-4 text-[#ff6b00]" />
-                <strong className="mt-1.5 block text-[10px] font-black leading-tight text-[#243650] sm:text-xs">Resposta rápida</strong>
-                <span className="mt-0.5 block text-[9px] leading-tight text-[#7a8798] sm:text-[10px]">Atendimento</span>
+                <strong className="mt-1.5 block text-[10px] font-black leading-tight text-[#1f1f1f] sm:text-xs">Resposta rápida</strong>
+                <span className="mt-0.5 block text-[9px] leading-tight text-[#7a7a7a] sm:text-[10px]">Atendimento</span>
               </div>
             </div>
           </div>

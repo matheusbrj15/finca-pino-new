@@ -51,7 +51,7 @@ export function CheckoutButton({
           id={statusId}
           aria-live="polite"
           className={cn(
-            'mt-2 flex min-h-5 items-center justify-center gap-1.5 text-center text-xs text-[#58677d] transition-opacity',
+            'mt-2 flex min-h-5 items-center justify-center gap-1.5 text-center text-xs text-[#5c5c5c] transition-opacity',
             showNotice ? 'opacity-100' : 'opacity-0',
           )}
         >

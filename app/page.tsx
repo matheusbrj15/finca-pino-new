@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <section className="border-b border-[#dbe4f0] bg-white">
+      <section className="border-b border-[#e2e2e2] bg-white">
         <div className="mx-auto grid w-full max-w-[1180px] gap-0 px-0 py-0 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,1.08fr)_minmax(370px,0.92fr)] lg:gap-12 lg:px-8 lg:py-14">
           <ProductGallery images={product.images} />
           <PurchaseCard product={product} />
