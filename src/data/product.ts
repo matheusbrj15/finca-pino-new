@@ -62,16 +62,16 @@ export const product: Product = {
   availableVoltages: ['48V'],
   images: [
     {
+      src: '/product/escada-conquest-ajuste-pe.png',
+      alt: 'Escada Little Giant Conquest 2.0 com ajuste de pé independente para uso em superfícies irregulares',
+    },
+    {
       src: '/product/escada-conquest-rapid-lock.png',
       alt: 'Escada Little Giant Conquest 2.0 com trava rápida patenteada Rapid Lock: gira, desliza e trava sem ferramentas',
     },
     {
       src: '/product/escada-conquest-pronta-obra.png',
       alt: 'Escada Little Giant Conquest 2.0 Tipo IA Extra Pesado, 136 kg de capacidade, 5,51 m de alcance, pronta para qualquer obra',
-    },
-    {
-      src: '/product/escada-conquest-ajuste-pe.png',
-      alt: 'Escada Little Giant Conquest 2.0 com ajuste de pé independente para uso em superfícies irregulares',
     },
   ],
   benefits: [
