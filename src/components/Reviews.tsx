@@ -14,7 +14,7 @@ export function Reviews({ reviews }: { reviews: ProductReview[] }) {
             <h2 className="text-[15px] font-bold text-[#1a1a1a] sm:text-base">Avaliações do produto</h2>
             <a
               href="#avaliacoes"
-              className="inline-flex shrink-0 items-center gap-0.5 text-xs font-medium text-[#ff6b00] transition hover:text-[#e05f00] sm:text-sm"
+              className="inline-flex shrink-0 items-center gap-0.5 text-xs font-medium text-[#fe6232] transition hover:text-[#e05f00] sm:text-sm"
             >
               Ver tudo
               <ChevronRight className="size-4" aria-hidden="true" />
@@ -93,7 +93,7 @@ export function Reviews({ reviews }: { reviews: ProductReview[] }) {
         ) : (
           <div className="mt-6 grid min-h-56 place-items-center rounded-[14px] border border-dashed border-[#c9c9c9] bg-white px-6 text-center">
             <div className="max-w-md py-8">
-              <span className="mx-auto grid size-12 place-items-center rounded-2xl bg-[#f2f2f2] text-[#ff6b00]">
+              <span className="mx-auto grid size-12 place-items-center rounded-2xl bg-[#f2f2f2] text-[#fe6232]">
                 <Camera className="size-5" />
               </span>
               <h3 className="mt-4 font-black text-[#141414]">Nenhuma avaliação real cadastrada ainda</h3>

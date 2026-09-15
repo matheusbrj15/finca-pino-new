@@ -47,7 +47,7 @@ export function PurchaseCard({ product }: { product: Product }) {
 
   return (
     <div className="flex min-w-0 flex-col justify-center">
-      <div className="grid min-h-[116px] grid-cols-[minmax(0,1fr)_122px] bg-[#ff6b00] text-white sm:grid-cols-[minmax(0,1fr)_160px]">
+      <div className="grid min-h-[116px] grid-cols-[minmax(0,1fr)_122px] bg-[#fe6232] text-white sm:grid-cols-[minmax(0,1fr)_160px]">
           <div className="flex min-w-0 flex-col justify-center px-3 py-3 sm:px-5">
             <div className="flex items-center gap-2 text-[11px] font-semibold leading-none">
               <span className="line-through text-white/75">{currency.format(originalPrice)}</span>
@@ -65,7 +65,7 @@ export function PurchaseCard({ product }: { product: Product }) {
           </div>
 
           <div className="flex flex-col items-end justify-between px-2 py-3 text-right sm:px-4">
-            <span className="inline-flex items-center gap-1 bg-[#141414] px-1.5 py-1 text-[8px] font-black leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[10px]">
+            <span className="inline-flex items-center gap-1 whitespace-nowrap border border-white px-1.5 py-1 text-[8px] font-black leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[10px]">
               <Zap className="size-3 fill-current" /> OFERTA RELÂMPAGO
             </span>
             <div>
@@ -89,7 +89,7 @@ export function PurchaseCard({ product }: { product: Product }) {
 
         <div className="bg-white px-3 py-3 sm:px-4 sm:py-4">
           <div className="flex flex-col items-start gap-1.5">
-            <span className="shrink-0 bg-[#141414] px-2 py-1 text-[10px] font-black leading-none text-white">
+            <span className="shrink-0 bg-[#fe6232] px-2 py-1 text-[10px] font-black leading-none text-white">
               INDICADO
             </span>
             <h1 className="text-[14px] font-semibold leading-[1.25] tracking-[-0.02em] text-[#141414] sm:text-base">
@@ -105,10 +105,10 @@ export function PurchaseCard({ product }: { product: Product }) {
               <span className="whitespace-nowrap text-xs text-[#666666]">4,2 mil avaliações</span>
             </div>
             <div className="flex shrink-0 items-center gap-1 text-[#6b6b6b]">
-              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#ff6b00]" type="button" aria-label="Favoritar produto">
+              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#fe6232]" type="button" aria-label="Favoritar produto">
                 <Heart className="size-5" />
               </button>
-              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#ff6b00]" type="button" aria-label="Compartilhar produto">
+              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#fe6232]" type="button" aria-label="Compartilhar produto">
                 <Share2 className="size-5" />
               </button>
               <button className="grid size-9 place-items-center rounded-full text-[#12a83a] transition hover:bg-[#e9f8ee]" type="button" aria-label="Falar pelo WhatsApp">
@@ -136,17 +136,17 @@ export function PurchaseCard({ product }: { product: Product }) {
 
             <div className="grid grid-cols-3 divide-x divide-[#ececec] text-center">
               <div className="min-w-0 px-1.5 sm:px-2">
-                <Star className="mx-auto size-4 text-[#ff6b00]" />
+                <Star className="mx-auto size-4 text-[#fe6232]" />
                 <strong className="mt-1.5 block text-xs font-black text-[#1f1f1f] sm:text-sm">4,9</strong>
                 <span className="mt-0.5 block text-[9px] leading-tight text-[#7a7a7a] sm:text-[10px]">Avaliações de clientes</span>
               </div>
               <div className="min-w-0 px-1.5 sm:px-2">
-                <ShoppingBag className="mx-auto size-4 text-[#ff6b00]" />
+                <ShoppingBag className="mx-auto size-4 text-[#fe6232]" />
                 <strong className="mt-1.5 block text-[10px] font-black leading-tight text-[#1f1f1f] sm:text-xs">Pedidos enviados</strong>
                 <span className="mt-0.5 block text-[9px] leading-tight text-[#7a7a7a] sm:text-[10px]">Clientes atendidos</span>
               </div>
               <div className="min-w-0 px-1.5 sm:px-2">
-                <MessagesSquare className="mx-auto size-4 text-[#ff6b00]" />
+                <MessagesSquare className="mx-auto size-4 text-[#fe6232]" />
                 <strong className="mt-1.5 block text-[10px] font-black leading-tight text-[#1f1f1f] sm:text-xs">Resposta rápida</strong>
                 <span className="mt-0.5 block text-[9px] leading-tight text-[#7a7a7a] sm:text-[10px]">Atendimento</span>
               </div>

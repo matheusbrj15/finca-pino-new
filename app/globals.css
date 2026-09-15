@@ -62,12 +62,12 @@
   --secondary-foreground: #141414;
   --muted: #f5f5f5;
   --muted-foreground: #5c5c5c;
-  --accent: #ff6b00;
+  --accent: #fe6232;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --border: #e2e2e2;
   --input: #e2e2e2;
-  --ring: #ff6b00;
+  --ring: #fe6232;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -134,7 +134,7 @@
 }
 
 ::selection {
-  background: #ff6b00;
+  background: #fe6232;
   color: #ffffff;
 }
 

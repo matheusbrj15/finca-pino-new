@@ -20,7 +20,7 @@ export function FinalCta({ checkoutUrl, formattedPrice }: FinalCtaProps) {
           </div>
         </div>
         <div className="flex flex-col justify-center bg-white p-6 sm:p-9">
-          <p className="text-xs font-black uppercase tracking-[0.12em] text-[#ff6b00]">Preço promocional</p>
+          <p className="text-xs font-black uppercase tracking-[0.12em] text-[#fe6232]">Preço promocional</p>
           <p className="mt-2 text-5xl font-black tracking-[-0.06em] text-[#141414]">{formattedPrice}</p>
           <p className="mt-2 text-sm leading-5 text-[#666666]">Sem preço anterior ou desconto percentual fictício.</p>
           <div className="mt-6">

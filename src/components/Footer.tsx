@@ -19,7 +19,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-[1180px] px-4 pb-4 pt-8 sm:px-6 sm:pb-5 sm:pt-9 lg:px-8">
         <div className="text-center">
           <p className="text-xl font-black leading-none tracking-[-0.045em] sm:text-2xl">
-            VITRINE <span className="text-[#ff6b00]">MIX</span>
+            VITRINE <span className="text-[#fe6232]">MIX</span>
           </p>
           <p className="mt-1.5 text-[12px] text-white/76 sm:text-[13px]">Sua loja de confiança para compras online</p>
         </div>
@@ -91,7 +91,7 @@ export function Footer() {
 
         <div className="mt-3 border-t border-white/20 pt-3 text-center text-[11.5px] leading-4 text-white/78 sm:text-[12.5px]">
           <p className="flex flex-wrap items-center justify-center gap-x-1">
-            <span>© 2026 <strong className="font-black text-white">VITRINE <span className="text-[#ff6b00]">MIX</span></strong></span>
+            <span>© 2026 <strong className="font-black text-white">VITRINE <span className="text-[#fe6232]">MIX</span></strong></span>
             <span>• CNPJ: 66.527.190/0001-08</span>
           </p>
         </div>

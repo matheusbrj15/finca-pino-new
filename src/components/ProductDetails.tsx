@@ -9,7 +9,7 @@ export function ProductDetails({ product }: { product: Product }) {
       <section className="bg-[#141414] text-white">
         <div className="mx-auto grid w-full max-w-[1180px] items-center gap-8 px-4 py-14 sm:px-6 sm:py-18 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14 lg:px-8 lg:py-22">
           <div className="relative overflow-hidden rounded-[28px] bg-white p-3 shadow-[0_28px_80px_rgba(0,0,0,0.24)] sm:p-6">
-            <div className="absolute left-5 top-5 z-10 rounded-full bg-[#ff6b00] px-3 py-1.5 text-[10px] font-black tracking-[0.12em] text-white">
+            <div className="absolute left-5 top-5 z-10 rounded-full bg-[#fe6232] px-3 py-1.5 text-[10px] font-black tracking-[0.12em] text-white">
               SISTEMA AIRLESS
             </div>
             <img
@@ -45,7 +45,7 @@ export function ProductDetails({ product }: { product: Product }) {
       <section className="bg-white">
         <div className="mx-auto grid w-full max-w-[1180px] gap-10 px-4 py-14 sm:px-6 sm:py-18 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16 lg:px-8 lg:py-20">
           <div>
-            <p className="text-xs font-black tracking-[0.14em] text-[#ff6b00]">ONDE ELA TRABALHA</p>
+            <p className="text-xs font-black tracking-[0.14em] text-[#fe6232]">ONDE ELA TRABALHA</p>
             <h2 className="mt-3 text-[clamp(1.8rem,4vw,3rem)] font-black leading-tight tracking-[-0.045em] text-[#141414]">
               Uma máquina, diferentes frentes de pintura.
             </h2>
@@ -54,7 +54,7 @@ export function ProductDetails({ product }: { product: Product }) {
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {product.applications.map((application) => (
-                <span key={application} className="rounded-full border border-[#e0e0e0] bg-[#f7f7f7] px-4 py-2 text-sm font-bold text-[#ff6b00]">
+                <span key={application} className="rounded-full border border-[#e0e0e0] bg-[#f7f7f7] px-4 py-2 text-sm font-bold text-[#fe6232]">
                   {application}
                 </span>
               ))}
@@ -69,10 +69,10 @@ export function ProductDetails({ product }: { product: Product }) {
           <div>
             <div className="flex items-end justify-between gap-4">
               <div>
-                <p className="text-xs font-black tracking-[0.14em] text-[#ff6b00]">FICHA ESSENCIAL</p>
+                <p className="text-xs font-black tracking-[0.14em] text-[#fe6232]">FICHA ESSENCIAL</p>
                 <h2 className="mt-3 text-2xl font-black tracking-[-0.035em] text-[#141414] sm:text-3xl">O que realmente importa</h2>
               </div>
-              <span className="hidden rounded-full bg-[#f2f2f2] px-3 py-1.5 text-xs font-black text-[#ff6b00] sm:block">DADOS OFICIAIS</span>
+              <span className="hidden rounded-full bg-[#f2f2f2] px-3 py-1.5 text-xs font-black text-[#fe6232] sm:block">DADOS OFICIAIS</span>
             </div>
             <dl className="mt-6 overflow-hidden rounded-[24px] border border-[#e2e2e2] bg-[#f7f7f7]">
               {product.specifications.map((specification) => (
