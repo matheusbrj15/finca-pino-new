@@ -3,7 +3,7 @@ import { Menu, Search, ShoppingCart } from 'lucide-react';
 export function Header() {
   return (
     <>
-      <div className="bg-[#ff6b00] px-4 py-1.5 text-center text-[11px] font-extrabold text-white sm:text-xs">
+      <div className="bg-[#141414] px-4 py-1.5 text-center text-[11px] font-extrabold text-white sm:text-xs">
         ⚡ Frete Grátis + Envio Imediato
       </div>
       <header className="border-b border-black/10 bg-[#ff6b00] text-white">
@@ -18,12 +18,10 @@ export function Header() {
             </button>
           </div>
 
-          <a className="group inline-flex items-center gap-1.5 whitespace-nowrap" href="#top" aria-label="Vitrine Mix — início">
-            <span className="flex items-center text-lg font-black tracking-[-0.05em] sm:text-xl">
-              <span className="text-white">Vitrine</span>
-              <span className="ml-1 rounded bg-white px-1.5 py-0.5 text-[#141414]">Mix</span>
+          <a className="group inline-flex items-center whitespace-nowrap" href="#top" aria-label="Vitrine Mix — início">
+            <span className="text-xl font-black tracking-[-0.05em] sm:text-2xl">
+              <span className="text-[#141414]">Vitrine</span><span className="text-white">Mix</span>
             </span>
-            <span className="size-1.5 rounded-full bg-white transition-transform group-hover:scale-125" />
           </a>
 
           <div className="flex justify-end">
