@@ -65,8 +65,13 @@ export function PurchaseCard({ product }: { product: Product }) {
           </div>
 
           <div className="flex flex-col items-end justify-between px-2 py-3 text-right sm:px-4">
-            <span className="inline-flex items-center gap-1 whitespace-nowrap border border-white px-1.5 py-1 text-[8px] font-black leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[10px]">
-              <Zap className="size-3 fill-current" /> OFERTA RELÂMPAGO
+            <span className="inline-flex items-center gap-1.5 whitespace-nowrap text-[8px] uppercase leading-none tracking-[0.01em] text-white sm:text-[10px]">
+              <span className="grid size-4 shrink-0 place-items-center rounded-full bg-[#ffb000] sm:size-5">
+                <Zap className="size-2.5 fill-[#141414] text-[#141414] sm:size-3" />
+              </span>
+              <span>
+                <span className="font-black">OFERTAS</span> <span className="font-semibold">RELÂMPAGO</span>
+              </span>
             </span>
             <div>
               <span className="text-[8px] font-black uppercase text-white/80 sm:text-[9px]">TERMINA EM:</span>
