@@ -47,7 +47,7 @@ export function PurchaseCard({ product }: { product: Product }) {
 
   return (
     <div className="flex min-w-0 flex-col justify-center">
-      <div className="grid min-h-[116px] grid-cols-[minmax(0,1fr)_122px] bg-[#141414] text-white sm:grid-cols-[minmax(0,1fr)_160px]">
+      <div className="grid min-h-[116px] grid-cols-[minmax(0,1fr)_122px] bg-[#ff6b00] text-white sm:grid-cols-[minmax(0,1fr)_160px]">
           <div className="flex min-w-0 flex-col justify-center px-3 py-3 sm:px-5">
             <div className="flex items-center gap-2 text-[11px] font-semibold leading-none">
               <span className="line-through text-white/75">{currency.format(originalPrice)}</span>
@@ -65,7 +65,7 @@ export function PurchaseCard({ product }: { product: Product }) {
           </div>
 
           <div className="flex flex-col items-end justify-between px-2 py-3 text-right sm:px-4">
-            <span className="inline-flex items-center gap-1 bg-[#ff6b00] px-1.5 py-1 text-[8px] font-black leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[10px]">
+            <span className="inline-flex items-center gap-1 bg-[#141414] px-1.5 py-1 text-[8px] font-black leading-none tracking-[0.01em] text-white sm:px-2 sm:text-[10px]">
               <Zap className="size-3 fill-current" /> OFERTA RELÂMPAGO
             </span>
             <div>
@@ -76,8 +76,8 @@ export function PurchaseCard({ product }: { product: Product }) {
               >
                 {countdown.map((value, index) => (
                   <span className="contents" key={index}>
-                    {index > 0 && <span className="text-[10px] font-black text-[#ff8a38]">:</span>}
-                    <span className="grid h-6 min-w-6 place-items-center border border-[#ff6b00] bg-white/8 px-1 text-[10px] font-black">
+                    {index > 0 && <span className="text-[10px] font-black text-white">:</span>}
+                    <span className="grid h-6 min-w-6 place-items-center bg-white px-1 text-[10px] font-black text-[#141414]">
                       {value}
                     </span>
                   </span>
@@ -87,12 +87,12 @@ export function PurchaseCard({ product }: { product: Product }) {
           </div>
       </div>
 
-        <div className="bg-white px-3 py-3 sm:px-4 sm:py-4">
+        <div className="bg-[#ff6b00] px-3 py-3 sm:px-4 sm:py-4">
           <div className="flex flex-col items-start gap-1.5">
-            <span className="shrink-0 bg-[#ff6b00] px-2 py-1 text-[10px] font-black leading-none text-white">
+            <span className="shrink-0 bg-[#141414] px-2 py-1 text-[10px] font-black leading-none text-white">
               INDICADO
             </span>
-            <h1 className="text-[14px] font-black leading-[1.25] tracking-[-0.02em] text-[#141414] sm:text-base">
+            <h1 className="text-[14px] font-semibold leading-[1.25] tracking-[-0.02em] text-white sm:text-base">
               {product.name}
             </h1>
           </div>
@@ -100,24 +100,24 @@ export function PurchaseCard({ product }: { product: Product }) {
           <div className="mt-2.5 flex items-center justify-between gap-3">
             <div className="flex min-w-0 items-center gap-2 text-sm">
               <span className="whitespace-nowrap text-[16px] tracking-[-0.12em] text-[#ffb000]" aria-label="5 estrelas">★★★★★</span>
-              <strong className="text-[#2a2a2a]">4,9</strong>
-              <span className="text-[#d6d6d6]">|</span>
-              <span className="whitespace-nowrap text-xs text-[#666666]">4,2 mil avaliações</span>
+              <strong className="text-white">4,9</strong>
+              <span className="text-white/50">|</span>
+              <span className="whitespace-nowrap text-xs text-white/85">4,2 mil avaliações</span>
             </div>
-            <div className="flex shrink-0 items-center gap-1 text-[#6b6b6b]">
-              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#ff6b00]" type="button" aria-label="Favoritar produto">
+            <div className="flex shrink-0 items-center gap-1 text-white/90">
+              <button className="grid size-9 place-items-center rounded-full transition hover:bg-black/15 hover:text-white" type="button" aria-label="Favoritar produto">
                 <Heart className="size-5" />
               </button>
-              <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#ff6b00]" type="button" aria-label="Compartilhar produto">
+              <button className="grid size-9 place-items-center rounded-full transition hover:bg-black/15 hover:text-white" type="button" aria-label="Compartilhar produto">
                 <Share2 className="size-5" />
               </button>
-              <button className="grid size-9 place-items-center rounded-full text-[#12a83a] transition hover:bg-[#e9f8ee]" type="button" aria-label="Falar pelo WhatsApp">
+              <button className="grid size-9 place-items-center rounded-full text-[#0c6b28] transition hover:bg-black/15" type="button" aria-label="Falar pelo WhatsApp">
                 <MessageCircle className="size-5" />
               </button>
             </div>
           </div>
 
-          <div className="mt-3 border border-[#e2e2e2] bg-white p-3 shadow-[0_5px_16px_rgba(0,40,112,0.055)] sm:p-4">
+          <div className="mt-3 border border-black/10 bg-white p-3 shadow-[0_5px_16px_rgba(0,0,0,0.14)] sm:p-4">
             <div className="flex items-center gap-3">
               <span className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-full border border-[#e2e2e2] bg-white p-0.5">
                 <img
