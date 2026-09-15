@@ -51,8 +51,8 @@ export const PRODUCT_CHECKOUT_URL: string | null =
   'https://seguro.final-agora-br.shop/api/public/shopify?product=906962988774&store=9069';
 
 export const product: Product = {
-  name: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" 3 em 1 Com Peças',
-  shortName: 'Nakasaki Chave de Impacto 48V',
+  name: 'Escada Modelo Conquest 2.0 Modelo 17 - Little Giant',
+  shortName: 'Little Giant Conquest 2.0',
   eyebrow: 'KIT 3 EM 1 • CHAVE DE IMPACTO, FURADEIRA E PARAFUSADEIRA • MOTOR BRUSHLESS 48V',
   description:
     'Kit 3 em 1: chave de impacto elétrica sem fio que também funciona como furadeira e parafusadeira com os adaptadores inclusos. Motor brushless com 350 N.m de torque, painel com 2 modos de uso e encaixe 1/2". Acompanha 2 baterias 48V, carregador bivolt, mandril para furadeira, adaptador para parafusadeira, pontas, brocas, 3 soquetes e maleta reforçada.',
@@ -62,24 +62,16 @@ export const product: Product = {
   availableVoltages: ['48V'],
   images: [
     {
-      src: '/product/chave-impacto-principal.png',
-      alt: 'Kit 3 em 1 Chave de Impacto Nakasaki 48V com adaptadores de furadeira e parafusadeira, maleta, 2 baterias e soquetes',
+      src: '/product/escada-conquest-rapid-lock.png',
+      alt: 'Escada Little Giant Conquest 2.0 com trava rápida patenteada Rapid Lock: gira, desliza e trava sem ferramentas',
     },
     {
-      src: '/product/chave-impacto-detalhes.png',
-      alt: 'Detalhes da Chave de Impacto Nakasaki: encaixe 1/2", bateria 48V 4.0Ah, lanterna LED, chave de rotação e gatilho adaptativo',
+      src: '/product/escada-conquest-pronta-obra.png',
+      alt: 'Escada Little Giant Conquest 2.0 Tipo IA Extra Pesado, 136 kg de capacidade, 5,51 m de alcance, pronta para qualquer obra',
     },
     {
-      src: '/product/chave-impacto-kit.png',
-      alt: 'Itens inclusos: chave de impacto, 2 baterias 48V, carregador, trava de chave e soquetes 19mm, 21mm e 22mm',
-    },
-    {
-      src: '/product/chave-impacto-torque.png',
-      alt: 'Potência de torque da Chave de Impacto Nakasaki: até 350 N.m para apertar e soltar porcas e parafusos',
-    },
-    {
-      src: '/product/chave-impacto-aplicacoes.png',
-      alt: 'Locais de uso da Chave de Impacto Nakasaki: marcenaria, mecânica, construção e manutenção',
+      src: '/product/escada-conquest-ajuste-pe.png',
+      alt: 'Escada Little Giant Conquest 2.0 com ajuste de pé independente para uso em superfícies irregulares',
     },
   ],
   benefits: [
@@ -139,86 +131,7 @@ export const product: Product = {
     '1 soquete sextavado 22mm',
     '1 maleta de transporte reforçada',
   ],
-  reviews: [
-    {
-      name: 'Lucas Almeida',
-      city: '',
-      rating: 5,
-      verified: true,
-      text: 'Muito bom, ótimo custo benefício, ferramenta bem forte, testei num carro que estava parado há 6 anos, produto top. Embalagem bem ruim, só um saco de lixo por volta da embalagem.',
-      images: [
-        {
-          src: '/reviews/avaliacao-1.webp',
-          alt: 'Cliente usando a Chave de Impacto Nakasaki para soltar parafusos da roda do carro',
-        },
-      ],
-    },
-    {
-      name: 'Jorge Oliveira',
-      city: '',
-      rating: 5,
-      verified: true,
-      text: 'Produto bom, de boa qualidade, gostei muito, bem forte, usei nas rodas do meu carro, funcionou perfeitamente, torque bom, sem palavras.',
-      images: [
-        {
-          src: '/reviews/avaliacao-2.webp',
-          alt: 'Kit completo da Chave de Impacto Nakasaki recebido pelo cliente',
-        },
-      ],
-    },
-    {
-      name: 'Marco Santos',
-      city: '',
-      rating: 5,
-      verified: true,
-      text: 'Ótima ferramenta, tira até roda de caminhão, bem robusta e com ótimo custo benefício, acabamento excelente, me atendeu muito bem.',
-      images: [
-        {
-          src: '/reviews/avaliacao-3.webp',
-          alt: 'Cliente segurando a Chave de Impacto Nakasaki recém-desembalada',
-        },
-      ],
-    },
-    {
-      name: 'Mauricio Lima',
-      city: '',
-      rating: 5,
-      verified: true,
-      text: 'Veio certinho, bem embalado, completo, ainda fiz o teste e sim, é 48V.',
-      images: [
-        {
-          src: '/reviews/avaliacao-4.webp',
-          alt: 'Chave de Impacto Nakasaki ainda na embalagem plástica dentro da maleta',
-        },
-      ],
-    },
-    {
-      name: 'Romulo Alcantara',
-      city: '',
-      rating: 5,
-      verified: true,
-      text: 'Envio e entrega rápidos. Qualidade excelente, já é a segunda que compro, chegou tudo ok.',
-      images: [
-        {
-          src: '/reviews/avaliacao-5.webp',
-          alt: 'Maleta da Chave de Impacto Nakasaki com baterias, carregador e manual de instruções',
-        },
-      ],
-    },
-    {
-      name: 'Guilherme Coimbra',
-      city: '',
-      rating: 5,
-      verified: true,
-      text: 'Gostei muito da minha compra, só falta usar. Levou 3 dias pra chegar na minha cidade e mais 4 dias no centro de logística, um absurdo, a Shopee deveria ver isso. Fora isso, nota 10.',
-      images: [
-        {
-          src: '/reviews/avaliacao-6.webp',
-          alt: 'Cliente com a Chave de Impacto Nakasaki e a maleta completa',
-        },
-      ],
-    },
-  ],
+  reviews: [],
   faq: [
     {
       question: 'Como funciona o kit 3 em 1?',
