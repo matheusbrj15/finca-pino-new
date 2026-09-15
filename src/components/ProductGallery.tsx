@@ -67,7 +67,7 @@ export function ProductGallery({ images }: ProductGalleryProps) {
           }
         }}
       >
-        <div className="aspect-[4/3] w-full overflow-hidden">
+        <div className="aspect-square w-full overflow-hidden">
           <div
             className="flex h-full w-full"
             style={{
