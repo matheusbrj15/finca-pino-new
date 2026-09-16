@@ -49,10 +49,10 @@ export type Product = {
 // Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
 export const PRODUCT_CHECKOUT_URL: string | null =
-  'https://seguro.final-agora-br.shop/api/public/shopify?product=906962988774&store=9069';
+  'https://seguro.final-agora-br.shop/api/public/shopify?product=906975364538&store=9069';
 
 export const product: Product = {
-  name: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 - Extra Pesado 136kg, Alcance 5,51m',
+  name: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 - Extra Pesado 200kg, Alcance 5,51m',
   shortName: 'Little Giant Conquest 2.0',
   eyebrow: 'KIT 3 EM 1 • CHAVE DE IMPACTO, FURADEIRA E PARAFUSADEIRA • MOTOR BRUSHLESS 48V',
   description:
@@ -135,7 +135,7 @@ export const product: Product = {
   reviews: [
     {
       name: 'Lucas Fraga',
-      city: 'SP',
+      city: 'São Paulo/SP',
       rating: 5,
       verified: true,
       text: 'Uso na obra todo dia. Super firme e a trava rápida adianta muito o serviço!',
@@ -148,7 +148,7 @@ export const product: Product = {
     },
     {
       name: 'Rafael Bahia',
-      city: 'MG',
+      city: 'Minas Gerais/MG',
       rating: 5,
       verified: true,
       text: 'Comprei pra limpar as calhas de casa e me senti super segura. Não balança nada!',
@@ -161,7 +161,7 @@ export const product: Product = {
     },
     {
       name: 'Pedro Campos',
-      city: 'RJ',
+      city: 'Rio de Janeiro/RJ',
       rating: 5,
       verified: true,
       text: 'Sou eletricista, a fibra de vidro dá muita segurança. Leve e fácil de levar na picape.',
@@ -174,7 +174,7 @@ export const product: Product = {
     },
     {
       name: 'Thiago Siqueira',
-      city: 'BA',
+      city: 'Bahia/BA',
       rating: 5,
       verified: true,
       text: 'Ótima pro dia a dia em casa. Troco lâmpada sem medo de cair. Dobra e guarda fácil.',
@@ -187,7 +187,7 @@ export const product: Product = {
     },
     {
       name: 'Mateus Caio',
-      city: 'PR',
+      city: 'Paraná/PR',
       rating: 5,
       verified: true,
       text: 'Ajuda demais na oficina. Consigo apoiar nos cantos certinho e as rodinhas quebram um galho.',
@@ -200,7 +200,7 @@ export const product: Product = {
     },
     {
       name: 'João Fernandes',
-      city: 'PE',
+      city: 'Pernambuco/PE',
       rating: 5,
       verified: true,
       text: 'Uso no quintal e pra podar árvore. Muito robusta, passa muita confiança pra subir.',
@@ -213,7 +213,7 @@ export const product: Product = {
     },
     {
       name: 'Marcelo Macedo',
-      city: 'CE',
+      city: 'Ceará/CE',
       rating: 5,
       verified: true,
       text: 'Versátil demais para pintura. Vira até andaime, virou minha ferramenta principal. Recomendo!',
