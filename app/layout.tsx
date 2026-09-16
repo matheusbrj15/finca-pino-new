@@ -13,9 +13,9 @@ function getMetaPixelScript(pixelId: string) {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" | Vitrine Mix',
+  title: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 | Vitrine Mix',
   description:
-    'Kit Chave de Impacto Elétrica Nakasaki 48V, motor brushless com 350 N.m de torque, 2 baterias, carregador bivolt e 3 soquetes inclusos.',
+    'Escada Little Giant Conquest 2.0, Classificação de Serviço Extra Pesado (Tipo IA), suporta até 136 kg, atende OSHA e ANSI. Ajuste contínuo de 1,37 m a 2,29 m e alcance máximo de 5,51 m.',
   alternates: {
     canonical: '/',
   },
@@ -27,25 +27,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V Brushless 1/2" | Vitrine Mix',
+    title: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 | Vitrine Mix',
     description:
-      'Motor brushless de alta potência, 350 N.m de torque e painel com 2 modos de uso.',
+      'Classificação Extra Pesado (Tipo IA), suporta até 136 kg, fibra de vidro Hi-Viz e rodas Tip & Glide.',
     siteName: 'Vitrine Mix',
     images: [
       {
-        url: '/product/chave-impacto-principal.png',
-        width: 1024,
-        height: 1024,
-        alt: 'Kit Chave de Impacto Elétrica Nakasaki Profissional 48V',
+        url: '/product/escada-conquest-resistencia.png',
+        width: 1080,
+        height: 1080,
+        alt: 'Escada Little Giant Conquest 2.0',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chave de Impacto Nakasaki 48V Brushless | Vitrine Mix',
+    title: 'Escada Little Giant Conquest 2.0 | Vitrine Mix',
     description:
-      'Chave de impacto elétrica sem fio com motor brushless de 350 N.m de torque.',
-    images: ['/product/chave-impacto-principal.png'],
+      'Escada multifuncional Tipo IA Extra Pesado, suporta até 136 kg, com fibra de vidro Hi-Viz.',
+    images: ['/product/escada-conquest-resistencia.png'],
   },
 };
 

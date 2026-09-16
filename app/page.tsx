@@ -21,14 +21,16 @@ export default function Home() {
           <PurchaseCard product={product} />
         </div>
       </section>
-      <section className="bg-white px-[3px] py-6 sm:px-6 sm:py-10 lg:py-12" aria-label="Informações completas do produto">
-        <img
-          src="/product/chave-impacto-informativo.png"
-          alt="Informações completas do Kit Chave de Impacto Nakasaki 48V: especificações, encaixe 1/2, locais de uso e o que vem na caixa"
-          className="mx-auto block h-auto w-full max-w-none object-contain sm:max-w-[1180px]"
-        />
+      <section aria-label="Informações completas do produto" className="bg-white">
+        <div className="mx-auto w-full max-w-[1180px] px-0 sm:px-6 sm:py-4 lg:px-8">
+          <img
+            src="/product/escada-conquest-informativo.png"
+            alt="Escada Little Giant Conquest 2.0 - versatilidade total, trava rápida Rapid Lock, barra em V integrada, fibra de vidro Hi-Viz, capacidade 136 kg, especificações técnicas completas"
+            className="w-full"
+          />
+        </div>
       </section>
-      <Reviews reviews={product.reviews} />
+      <Reviews reviews={product.reviews} customerPhotos={product.customerPhotos} />
       <Footer />
       <FloatingBuyButton checkoutUrl={product.checkoutUrl} formattedPrice={formattedPrice} />
     </main>
