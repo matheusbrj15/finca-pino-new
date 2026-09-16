@@ -32,7 +32,12 @@ export default function Home() {
       </section>
       <Reviews reviews={product.reviews} customerPhotos={product.customerPhotos} />
       <Footer />
-      <FloatingBuyButton checkoutUrl={product.checkoutUrl} formattedPrice={formattedPrice} />
+      <FloatingBuyButton
+        checkoutUrl={product.checkoutUrl}
+        formattedPrice={formattedPrice}
+        price={product.price}
+        productName={product.name}
+      />
     </main>
   );
 }

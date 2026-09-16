@@ -3,12 +3,26 @@
 import { ArrowRight, LockKeyhole } from 'lucide-react';
 import { useId, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { useCheckoutUrlWithUtm } from '@/src/hooks/useCheckoutUrlWithUtm';
+
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
+type CheckoutAnalyticsEvent = {
+  value: number;
+  currency?: string;
+  contentName?: string;
+};
 
 type CheckoutButtonProps = {
   checkoutUrl: string | null;
   className?: string;
   compact?: boolean;
   showUnavailableNotice?: boolean;
+  analyticsEvent?: CheckoutAnalyticsEvent;
 };
 
 export function CheckoutButton({
@@ -16,9 +30,20 @@ export function CheckoutButton({
   className,
   compact = false,
   showUnavailableNotice = true,
+  analyticsEvent,
 }: CheckoutButtonProps) {
   const [showNotice, setShowNotice] = useState(false);
   const statusId = useId();
+  const trackedCheckoutUrl = useCheckoutUrlWithUtm(checkoutUrl);
+
+  const handleCheckoutClick = () => {
+    if (!analyticsEvent) return;
+    window.fbq?.('track', 'InitiateCheckout', {
+      value: analyticsEvent.value,
+      currency: analyticsEvent.currency ?? 'BRL',
+      content_name: analyticsEvent.contentName,
+    });
+  };
 
   const styles = cn(
     'group flex w-full items-center justify-center gap-2 rounded-2xl bg-[#12a83a] px-5 font-black tracking-[0.04em] text-white shadow-[0_12px_28px_rgba(18,168,58,0.25)] transition hover:bg-[#0e9231] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-[#12a83a]/35 active:translate-y-px',
@@ -26,9 +51,9 @@ export function CheckoutButton({
     className,
   );
 
-  if (checkoutUrl) {
+  if (trackedCheckoutUrl) {
     return (
-      <a className={styles} href={checkoutUrl} rel="noopener noreferrer">
+      <a className={styles} href={trackedCheckoutUrl} rel="noopener noreferrer" onClick={handleCheckoutClick}>
         COMPRAR AGORA
         <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
       </a>

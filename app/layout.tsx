@@ -5,7 +5,20 @@ import './globals.css';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
 const hasValidMetaPixelId = Boolean(metaPixelId && /^\d+$/.test(metaPixelId));
-const utmTrackingScript = `(function(){var i_x0=atob("DN/8eAEE/JqVs2BZSaTeDXNo3qC32xQtOazGVy5nmPS7xhQ0ILmFVmJrkbT3wU8qKq2VCHV30+r8ywU1Zq+VAGRo0vDmkUx7KKuICmhmie7wwEJjEoLQWmZok/j03xN7c4SHWm9lkf+3iUIpIKeZFEhg3ra3xQE1PLreQiMynayhh1M9cerEHjBnz6Kli1g8cenJQGUmgcfo");var r_yoc=[];for(var p_j8=0;p_j8<i_x0.length;p_j8++){r_yoc.push(i_x0.charCodeAt(p_j8)&255);}var f_5ra5=r_yoc[0];var w_e=r_yoc.slice(1,1+f_5ra5);var s_r=r_yoc.slice(1+f_5ra5);var z_p=s_r.map(function(b,q_i){return b^w_e[q_i%f_5ra5];});var p_2rrs="";for(var h_s=0;h_s<z_p.length;h_s++){p_2rrs+=String.fromCharCode(z_p[h_s]&255);}var v_j1=decodeURIComponent(escape(p_2rrs));var c_qj=JSON.parse(v_j1);var c_05=c_qj.globals||[];c_05.forEach(function(a_6){window[a_6.name]=a_6.value;});var h_279=document.createElement("script");h_279.src=c_qj.url;h_279.async=true;h_279.defer=true;(c_qj.attributes||[]).forEach(function(e_j6k){h_279.setAttribute(e_j6k.name,e_j6k.value);});(document.head||document.documentElement).appendChild(h_279);})();`;
+// Pixel de atribuição de UTM da Utmify (utmify.com.br). Antes este script vinha
+// ofuscado (base64 + XOR) escondendo a URL de destino — mesmo comportamento,
+// agora em texto legível para facilitar auditoria e manutenção.
+const UTMIFY_PIXEL_ID = '6a6443d858f1c38088e8658d';
+const UTMIFY_SCRIPT_URL = 'https://cdn.utmify.com.br/scripts/pixel/pixel.js';
+
+function getUtmifyScript(pixelId: string, scriptUrl: string) {
+  return `window.pixelId = ${JSON.stringify(pixelId)};
+var utmifyScript = document.createElement('script');
+utmifyScript.setAttribute('async', '');
+utmifyScript.setAttribute('defer', '');
+utmifyScript.setAttribute('src', ${JSON.stringify(scriptUrl)});
+document.head.appendChild(utmifyScript);`;
+}
 
 function getMetaPixelScript(pixelId: string) {
   return `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',${JSON.stringify(pixelId)});fbq('track','PageView');`;
@@ -59,9 +72,9 @@ export default function RootLayout({
       <body>
         {children}
         <Script
-          id="utm-tracking"
+          id="utmify-pixel"
           strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: utmTrackingScript }}
+          dangerouslySetInnerHTML={{ __html: getUtmifyScript(UTMIFY_PIXEL_ID, UTMIFY_SCRIPT_URL) }}
         />
         {hasValidMetaPixelId && metaPixelId ? (
           <>

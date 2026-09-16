@@ -7,9 +7,11 @@ import { cn } from '@/lib/utils';
 type FloatingBuyButtonProps = {
   checkoutUrl: string | null;
   formattedPrice: string;
+  price?: number;
+  productName?: string;
 };
 
-export function FloatingBuyButton({ checkoutUrl }: FloatingBuyButtonProps) {
+export function FloatingBuyButton({ checkoutUrl, price, productName }: FloatingBuyButtonProps) {
   const isFooterNear = useFooterOverlap('site-footer', 140);
 
   return (
@@ -23,7 +25,14 @@ export function FloatingBuyButton({ checkoutUrl }: FloatingBuyButtonProps) {
         isFooterNear ? 'pointer-events-none translate-y-5 opacity-0' : 'pointer-events-auto translate-y-0 opacity-100',
       )}
     >
-      <CheckoutButton checkoutUrl={checkoutUrl} compact showUnavailableNotice={false} />
+      <CheckoutButton
+        checkoutUrl={checkoutUrl}
+        compact
+        showUnavailableNotice={false}
+        analyticsEvent={
+          price !== undefined ? { value: price, currency: 'BRL', contentName: productName } : undefined
+        }
+      />
     </div>
   );
 }
