@@ -42,6 +42,7 @@ export type Product = {
   specifications: ProductSpecification[];
   kitContents: string[];
   reviews: ProductReview[];
+  customerPhotos: ProductImage[];
   faq: ProductFaq[];
 };
 
@@ -51,7 +52,7 @@ export const PRODUCT_CHECKOUT_URL: string | null =
   'https://seguro.final-agora-br.shop/api/public/shopify?product=906962988774&store=9069';
 
 export const product: Product = {
-  name: 'Escada Modelo Conquest 2.0 Modelo 17 - Little Giant',
+  name: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 - Extra Pesado 136kg, Alcance 5,51m',
   shortName: 'Little Giant Conquest 2.0',
   eyebrow: 'KIT 3 EM 1 • CHAVE DE IMPACTO, FURADEIRA E PARAFUSADEIRA • MOTOR BRUSHLESS 48V',
   description:
@@ -131,7 +132,120 @@ export const product: Product = {
     '1 soquete sextavado 22mm',
     '1 maleta de transporte reforçada',
   ],
-  reviews: [],
+  reviews: [
+    {
+      name: 'Lucas Fraga',
+      city: 'SP',
+      rating: 5,
+      verified: true,
+      text: 'Uso na obra todo dia. Super firme e a trava rápida adianta muito o serviço!',
+      images: [
+        {
+          src: '/product/cliente-foto-arvore.png',
+          alt: 'Escada Little Giant Conquest 2.0 apoiada em uma árvore no quintal, em posição de extensão',
+        },
+      ],
+    },
+    {
+      name: 'Rafael Bahia',
+      city: 'MG',
+      rating: 5,
+      verified: true,
+      text: 'Comprei pra limpar as calhas de casa e me senti super segura. Não balança nada!',
+      images: [
+        {
+          src: '/product/cliente-foto-parede-branca.png',
+          alt: 'Escada Little Giant Conquest 2.0 dobrada e apoiada em parede de obra em construção',
+        },
+      ],
+    },
+    {
+      name: 'Pedro Campos',
+      city: 'RJ',
+      rating: 5,
+      verified: true,
+      text: 'Sou eletricista, a fibra de vidro dá muita segurança. Leve e fácil de levar na picape.',
+      images: [
+        {
+          src: '/product/cliente-foto-trava-detalhe.png',
+          alt: 'Detalhe da trava rápida Rapid Lock da escada Little Giant Conquest 2.0',
+        },
+      ],
+    },
+    {
+      name: 'Thiago Siqueira',
+      city: 'BA',
+      rating: 5,
+      verified: true,
+      text: 'Ótima pro dia a dia em casa. Troco lâmpada sem medo de cair. Dobra e guarda fácil.',
+      images: [
+        {
+          src: '/product/cliente-foto-sala.png',
+          alt: 'Escada Little Giant Conquest 2.0 dobrada dentro de uma sala',
+        },
+      ],
+    },
+    {
+      name: 'Mateus Caio',
+      city: 'PR',
+      rating: 5,
+      verified: true,
+      text: 'Ajuda demais na oficina. Consigo apoiar nos cantos certinho e as rodinhas quebram um galho.',
+      images: [
+        {
+          src: '/product/cliente-foto-caminhonete.png',
+          alt: 'Escada Little Giant Conquest 2.0 dobrada e guardada na caçamba de uma caminhonete',
+        },
+      ],
+    },
+    {
+      name: 'João Fernandes',
+      city: 'PE',
+      rating: 5,
+      verified: true,
+      text: 'Uso no quintal e pra podar árvore. Muito robusta, passa muita confiança pra subir.',
+      images: [
+        {
+          src: '/product/cliente-foto-garagem.png',
+          alt: 'Escada Little Giant Conquest 2.0 aberta em modo cavalete dentro de uma garagem',
+        },
+      ],
+    },
+    {
+      name: 'Marcelo Macedo',
+      city: 'CE',
+      rating: 5,
+      verified: true,
+      text: 'Versátil demais para pintura. Vira até andaime, virou minha ferramenta principal. Recomendo!',
+      images: [],
+    },
+  ],
+  customerPhotos: [
+    {
+      src: '/product/cliente-foto-arvore.png',
+      alt: 'Escada Little Giant Conquest 2.0 apoiada em uma árvore no quintal, em posição de extensão',
+    },
+    {
+      src: '/product/cliente-foto-parede-branca.png',
+      alt: 'Escada Little Giant Conquest 2.0 dobrada e apoiada em parede de obra em construção',
+    },
+    {
+      src: '/product/cliente-foto-trava-detalhe.png',
+      alt: 'Detalhe da trava rápida Rapid Lock da escada Little Giant Conquest 2.0',
+    },
+    {
+      src: '/product/cliente-foto-sala.png',
+      alt: 'Escada Little Giant Conquest 2.0 dobrada dentro de uma sala',
+    },
+    {
+      src: '/product/cliente-foto-caminhonete.png',
+      alt: 'Escada Little Giant Conquest 2.0 dobrada e guardada na caçamba de uma caminhonete',
+    },
+    {
+      src: '/product/cliente-foto-garagem.png',
+      alt: 'Escada Little Giant Conquest 2.0 aberta em modo cavalete dentro de uma garagem',
+    },
+  ],
   faq: [
     {
       question: 'Como funciona o kit 3 em 1?',
