@@ -24,8 +24,8 @@ export default function Home() {
       <section aria-label="Informações completas do produto" className="bg-white">
         <div className="mx-auto w-full max-w-[1180px] px-0 sm:px-6 sm:py-4 lg:px-8">
           <img
-            src="/product/escada-conquest-informativo.png"
-            alt="Escada Little Giant Conquest 2.0 - versatilidade total, trava rápida Rapid Lock, barra em V integrada, fibra de vidro Hi-Viz, capacidade 136 kg, especificações técnicas completas"
+            src="/product/ddpai-informativo.png"
+            alt="DDPAI Mini Pro 2K - monitoramento de estacionamento 24h (requer Hardwire Kit vendido separadamente), supercapacitor resistente de -20°C a 70°C, e visualização e compartilhamento de vídeos pelo aplicativo DDPAI"
             className="w-full"
           />
         </div>

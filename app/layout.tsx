@@ -26,9 +26,9 @@ function getMetaPixelScript(pixelId: string) {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 | Vitrine Mix',
+  title: 'DDPAI Mini Pro Uber Câmera Veicular 2K | Vitrine Mix',
   description:
-    'Escada Little Giant Conquest 2.0, Classificação de Serviço Extra Pesado (Tipo IA), suporta até 136 kg, atende OSHA e ANSI. Ajuste contínuo de 1,37 m a 2,29 m e alcance máximo de 5,51 m.',
+    'Câmera veicular DDPAI Mini Pro 2K, gravação Ultra HD 1440P, ângulo de 140°, Wi-Fi, visão noturna NightVIS 2.0, sensor G e supercapacitor. Monitoramento de estacionamento 24h com Hardwire Kit (vendido separadamente).',
   alternates: {
     canonical: '/',
   },
@@ -40,25 +40,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 | Vitrine Mix',
+    title: 'DDPAI Mini Pro Uber Câmera Veicular 2K | Vitrine Mix',
     description:
-      'Classificação Extra Pesado (Tipo IA), suporta até 136 kg, fibra de vidro Hi-Viz e rodas Tip & Glide.',
+      'Gravação 2K com visão noturna NightVIS 2.0, ângulo de 140°, Wi-Fi e supercapacitor resistente de -20°C a 70°C.',
     siteName: 'Vitrine Mix',
     images: [
       {
-        url: '/product/escada-conquest-resistencia.png',
-        width: 1080,
-        height: 1080,
-        alt: 'Escada Little Giant Conquest 2.0',
+        url: '/product/ddpai-produto-recursos.png',
+        width: 1024,
+        height: 1024,
+        alt: 'DDPAI Mini Pro 2K',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Escada Little Giant Conquest 2.0 | Vitrine Mix',
+    title: 'DDPAI Mini Pro Uber Câmera Veicular 2K | Vitrine Mix',
     description:
-      'Escada multifuncional Tipo IA Extra Pesado, suporta até 136 kg, com fibra de vidro Hi-Viz.',
-    images: ['/product/escada-conquest-resistencia.png'],
+      'Câmera veicular 2K com visão noturna, Wi-Fi e supercapacitor, para motoristas de app e uso pessoal.',
+    images: ['/product/ddpai-produto-recursos.png'],
   },
 };
 

@@ -48,242 +48,131 @@ export type Product = {
 
 // Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null =
-  'https://seguro.final-agora-br.shop/api/public/shopify?product=906975364538&store=9069';
+export const PRODUCT_CHECKOUT_URL: string | null = null;
 
 export const product: Product = {
-  name: 'Escada Multifuncional Little Giant Conquest 2.0 Modelo 17 - Extra Pesado 200kg, Alcance 5,51m',
-  shortName: 'Little Giant Conquest 2.0',
-  eyebrow: 'KIT 3 EM 1 • CHAVE DE IMPACTO, FURADEIRA E PARAFUSADEIRA • MOTOR BRUSHLESS 48V',
+  name: 'DDPAI Mini Pro Uber Câmera Veicular 2K Ângulo de 140° Dash Cam Wi-Fi Visão Noturna Monitoramento 24h',
+  shortName: 'DDPAI Mini Pro 2K',
+  eyebrow: 'CÂMERA VEICULAR 2K • WI-FI • VISÃO NOTURNA • ÂNGULO 140° • SUPERCAPACITOR',
   description:
-    'Kit 3 em 1: chave de impacto elétrica sem fio que também funciona como furadeira e parafusadeira com os adaptadores inclusos. Motor brushless com 350 N.m de torque, painel com 2 modos de uso e encaixe 1/2". Acompanha 2 baterias 48V, carregador bivolt, mandril para furadeira, adaptador para parafusadeira, pontas, brocas, 3 soquetes e maleta reforçada.',
+    'Câmera veicular DDPAI Mini Pro 2K com gravação em Ultra HD 1440P, ângulo de visão de 140°, visão noturna NightVIS 2.0 e lente rotativa de 360°. Conecta por Wi-Fi ao aplicativo DDPAI para visualizar, baixar e compartilhar vídeos. Sensor G com gravação de emergência automática em colisões, gravação em loop com sobrescrição automática e supercapacitor, que funciona de -20°C a 70°C sem risco de ignição. Instalação discreta atrás do retrovisor. Necessário cartão microSD Classe 10/U3 (até 256GB, vendido separadamente); o monitoramento de estacionamento 24h exige o Hardwire Kit exclusivo DDPAI (vendido separadamente).',
   price: 89.9,
-  oldPrice: 249.9,
+  oldPrice: 179.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
   availableVoltages: ['48V'],
   images: [
     {
-      src: '/product/escada-conquest-ajuste-pe.png',
-      alt: 'Escada Little Giant Conquest 2.0 com ajuste de pé independente para uso em superfícies irregulares',
+      src: '/product/ddpai-instalacao-discreta.png',
+      alt: 'Instalação compacta e discreta da câmera veicular DDPAI Mini Pro 2K, escondida atrás do retrovisor do carro',
     },
     {
-      src: '/product/escada-conquest-rapid-lock.png',
-      alt: 'Escada Little Giant Conquest 2.0 com trava rápida patenteada Rapid Lock: gira, desliza e trava sem ferramentas',
+      src: '/product/ddpai-produto-recursos.png',
+      alt: 'Câmera veicular DDPAI Mini Pro 2K com recursos: visão noturna, bloqueio de emergência, controle por app, gravação 2K, gravação em loop, monitoramento 24h, supercapacitor e lente rotativa 360°',
     },
     {
-      src: '/product/escada-conquest-pronta-obra.png',
-      alt: 'Escada Little Giant Conquest 2.0 Tipo IA Extra Pesado, 136 kg de capacidade, 5,51 m de alcance, pronta para qualquer obra',
+      src: '/product/ddpai-mini-pro-2k-banner.png',
+      alt: 'DDPAI Mini Pro 2K - controle por aplicativo, Wi-Fi, sensor G, abertura F2.0, visão noturna, gravação em loop, supercapacitor e certificação Anatel',
+    },
+    {
+      src: '/product/ddpai-nightvis.png',
+      alt: 'Comparativo de visão noturna NightVIS 2.0 da câmera veicular DDPAI Mini Pro, com e sem a tecnologia, mesmo sob iluminação fraca ou faróis intensos',
     },
   ],
   benefits: [
     {
-      title: 'Motor brushless de alta potência',
+      title: 'Gravação 2K com visão noturna real',
       description:
-        'Torque máximo de 350 N.m com motor sem escovas (brushless), para mais força, durabilidade e menor desgaste da ferramenta.',
+        'Ultra HD 1440P a 30fps com tecnologia NightVIS 2.0, que preserva os detalhes mesmo sob iluminação fraca ou faróis intensos à noite.',
     },
     {
-      title: 'Painel inteligente com 2 modos de uso',
+      title: 'Ângulo de 140° com lente rotativa 360°',
       description:
-        'Escolha entre rotação contínua para máxima agilidade ou o modo cadenciado, que evita espanar ou danificar parafusos e porcas.',
+        'Campo de visão amplo de 105° a 140°, com lente que gira livremente para cobrir uma área maior do trajeto.',
     },
     {
-      title: 'Gatilho adaptativo e alta velocidade',
+      title: 'Supercapacitor: mais segurança em temperaturas extremas',
       description:
-        'Velocidade de rotação de até 3300 RPM e impacto de até 2400 BPM, controlados pela pressão exercida no gatilho.',
+        'Substitui a bateria de lítio por um supercapacitor, sem risco de ignição, com melhor resistência térmica de -20°C a 70°C.',
     },
     {
-      title: 'Autonomia com 2 baterias 48V',
+      title: 'Wi-Fi integrado e controle pelo app DDPAI',
       description:
-        'Acompanha 2 baterias de lítio 48V 4.0Ah e carregador bivolt, para trocar e continuar o serviço sem esperar recarregar.',
+        'Conecte por Wi-Fi e visualize, reproduza, baixe e compartilhe os vídeos direto do celular, sem precisar retirar o cartão de memória.',
     },
   ],
   applications: [
-    'Marcenaria',
-    'Mecânica',
-    'Construção civil',
-    'Manutenção geral',
-    'Montagem de móveis',
-    'Reparos automotivos',
+    'Motoristas de aplicativo (Uber/99)',
+    'Uso pessoal no dia a dia',
+    'Viagens de estrada',
+    'Frotas e táxis',
+    'Prova em caso de acidente',
+    'Monitoramento de estacionamento (com Hardwire Kit)',
   ],
   specifications: [
-    { label: 'Marca / Linha', value: 'Nakasaki Professional' },
-    { label: 'Motor', value: 'Sem escovas (brushless)' },
-    { label: 'Torque máximo', value: '350 N.m' },
-    { label: 'Velocidade de rotação', value: '0–3300 RPM' },
-    { label: 'Velocidade de impacto', value: '0–2400 BPM' },
-    { label: 'Encaixe do eixo', value: '1/2" (meia polegada)' },
-    { label: 'Bateria', value: '48V Li-Ion 4.0Ah (2 unidades)' },
-    { label: 'Carregador', value: 'Bivolt (110V/220V)' },
-    { label: 'Sistema de reversão', value: 'Sim (aperta e desaperta)' },
-    { label: 'Cor', value: 'Amarelo / preto' },
+    { label: 'Marca', value: 'DDPAI' },
+    { label: 'Modelo', value: 'Mini Pro 2K' },
+    { label: 'Fabricante do chip', value: 'HiSilicon' },
+    { label: 'Pixels', value: '12 megapixels' },
+    { label: 'Resolução de vídeo', value: '2560×1440P (2K QHD) @30fps' },
+    { label: 'Formato de vídeo', value: 'AVI (H.265/H.264)' },
+    { label: 'Ângulo de visão', value: '105° a 140°' },
+    { label: 'Cartão de memória', value: 'microSD Classe 10/U3, até 256GB (vendido separadamente)' },
+    { label: 'Conectividade', value: 'Wi-Fi 2.4GHz + app DDPAI (Android/iOS)' },
+    { label: 'Sensor de gravidade (G-Sensor)', value: 'Sim, com gravação de emergência automática' },
+    { label: 'Detecção de movimento', value: 'Sim' },
+    { label: 'Gravação em loop', value: 'Sim, com sobrescrição automática' },
+    { label: 'Alimentação', value: 'Supercapacitor (-20°C a 70°C)' },
+    { label: 'Instalação', value: 'Portátil, atrás do retrovisor' },
+    { label: 'Garantia', value: '1 ano' },
   ],
   kitContents: [
-    '1 Chave de Impacto Elétrica com encaixe 1/2"',
-    '1 mandril adaptador para função furadeira',
-    '1 adaptador rápido para função parafusadeira',
-    '5 pontas de parafusadeira',
-    '2 brocas para furadeira',
-    '3 anéis limitadores de torque coloridos',
-    '2 baterias de lítio 48V (4.0Ah)',
-    '1 carregador bivolt',
-    '1 trava de segurança da chave',
-    '1 soquete sextavado 19mm',
-    '1 soquete sextavado 21mm',
-    '1 soquete sextavado 22mm',
-    '1 maleta de transporte reforçada',
+    '1 Câmera Veicular DDPAI Mini Pro',
+    '1 Pé de cabra (ferramenta de instalação)',
+    '1 Cabo de alimentação',
+    '1 Carregador veicular',
+    '1 Manual do usuário',
+    '1 Adesivo 3M',
+    '1 Adesivos eletrostáticos',
+    'Cartão microSD e Hardwire Kit NÃO inclusos (vendidos separadamente)',
   ],
-  reviews: [
-    {
-      name: 'Lucas Fraga',
-      city: 'São Paulo/SP',
-      rating: 5,
-      verified: true,
-      text: 'Uso na obra todo dia. Super firme e a trava rápida adianta muito o serviço!',
-      images: [
-        {
-          src: '/product/cliente-foto-arvore.png',
-          alt: 'Escada Little Giant Conquest 2.0 apoiada em uma árvore no quintal, em posição de extensão',
-        },
-      ],
-    },
-    {
-      name: 'Rafael Bahia',
-      city: 'Minas Gerais/MG',
-      rating: 5,
-      verified: true,
-      text: 'Comprei pra limpar as calhas de casa e me senti super segura. Não balança nada!',
-      images: [
-        {
-          src: '/product/cliente-foto-parede-branca.png',
-          alt: 'Escada Little Giant Conquest 2.0 dobrada e apoiada em parede de obra em construção',
-        },
-      ],
-    },
-    {
-      name: 'Pedro Campos',
-      city: 'Rio de Janeiro/RJ',
-      rating: 5,
-      verified: true,
-      text: 'Sou eletricista, a fibra de vidro dá muita segurança. Leve e fácil de levar na picape.',
-      images: [
-        {
-          src: '/product/cliente-foto-trava-detalhe.png',
-          alt: 'Detalhe da trava rápida Rapid Lock da escada Little Giant Conquest 2.0',
-        },
-      ],
-    },
-    {
-      name: 'Thiago Siqueira',
-      city: 'Bahia/BA',
-      rating: 5,
-      verified: true,
-      text: 'Ótima pro dia a dia em casa. Troco lâmpada sem medo de cair. Dobra e guarda fácil.',
-      images: [
-        {
-          src: '/product/cliente-foto-sala.png',
-          alt: 'Escada Little Giant Conquest 2.0 dobrada dentro de uma sala',
-        },
-      ],
-    },
-    {
-      name: 'Mateus Caio',
-      city: 'Paraná/PR',
-      rating: 5,
-      verified: true,
-      text: 'Ajuda demais na oficina. Consigo apoiar nos cantos certinho e as rodinhas quebram um galho.',
-      images: [
-        {
-          src: '/product/cliente-foto-caminhonete.png',
-          alt: 'Escada Little Giant Conquest 2.0 dobrada e guardada na caçamba de uma caminhonete',
-        },
-      ],
-    },
-    {
-      name: 'João Fernandes',
-      city: 'Pernambuco/PE',
-      rating: 5,
-      verified: true,
-      text: 'Uso no quintal e pra podar árvore. Muito robusta, passa muita confiança pra subir.',
-      images: [
-        {
-          src: '/product/cliente-foto-garagem.png',
-          alt: 'Escada Little Giant Conquest 2.0 aberta em modo cavalete dentro de uma garagem',
-        },
-      ],
-    },
-    {
-      name: 'Marcelo Macedo',
-      city: 'Ceará/CE',
-      rating: 5,
-      verified: true,
-      text: 'Versátil demais para pintura. Vira até andaime, virou minha ferramenta principal. Recomendo!',
-      images: [],
-    },
-  ],
-  customerPhotos: [
-    {
-      src: '/product/cliente-foto-arvore.png',
-      alt: 'Escada Little Giant Conquest 2.0 apoiada em uma árvore no quintal, em posição de extensão',
-    },
-    {
-      src: '/product/cliente-foto-parede-branca.png',
-      alt: 'Escada Little Giant Conquest 2.0 dobrada e apoiada em parede de obra em construção',
-    },
-    {
-      src: '/product/cliente-foto-trava-detalhe.png',
-      alt: 'Detalhe da trava rápida Rapid Lock da escada Little Giant Conquest 2.0',
-    },
-    {
-      src: '/product/cliente-foto-sala.png',
-      alt: 'Escada Little Giant Conquest 2.0 dobrada dentro de uma sala',
-    },
-    {
-      src: '/product/cliente-foto-caminhonete.png',
-      alt: 'Escada Little Giant Conquest 2.0 dobrada e guardada na caçamba de uma caminhonete',
-    },
-    {
-      src: '/product/cliente-foto-garagem.png',
-      alt: 'Escada Little Giant Conquest 2.0 aberta em modo cavalete dentro de uma garagem',
-    },
-  ],
+  reviews: [],
+  customerPhotos: [],
   faq: [
     {
-      question: 'Como funciona o kit 3 em 1?',
+      question: 'A câmera vem com cartão de memória incluso?',
       answer:
-        'Além de chave de impacto, o kit acompanha um mandril adaptador para função furadeira e um adaptador rápido para função parafusadeira, permitindo furar e parafusar com a mesma ferramenta.',
+        'Não. É necessário um cartão microSD Classe 10 ou U3, de até 256GB, vendido separadamente. Evite cartões genéricos ou linhas "Ultra" de outros fornecedores, pois podem não sustentar a gravação em alta resolução.',
     },
     {
-      question: 'Para quais usos essa chave de impacto é indicada?',
+      question: 'O monitoramento de estacionamento 24h funciona sem instalar nada extra?',
       answer:
-        'É indicada para marcenaria, mecânica, construção civil e manutenção geral, apertando e desapertando parafusos e porcas com rapidez e segurança.',
+        'Não. Esse recurso exige o Hardwire Kit exclusivo da DDPAI, vendido separadamente. Sem ele, a câmera grava apenas enquanto o veículo estiver ligado.',
     },
     {
-      question: 'A chave funciona sem fio, só com bateria?',
+      question: 'A câmera tem visão noturna?',
       answer:
-        'Sim. É uma chave de impacto elétrica sem fio, com motor brushless de 48V, e acompanha 2 baterias de 4.0Ah e 1 carregador bivolt.',
+        'Sim. A tecnologia NightVIS 2.0 preserva os detalhes da gravação mesmo sob iluminação fraca de postes ou com faróis intensos.',
     },
     {
-      question: 'É possível controlar a força e o modo de uso?',
+      question: 'Como faço para ver os vídeos gravados no celular?',
       answer:
-        'Sim. O painel de controle tem 2 modos: rotação contínua livre e modo cadenciado com parada automática, que ajuda a não danificar a rosca do parafuso ou da porca.',
+        'A câmera tem Wi-Fi integrado. Basta conectar pelo aplicativo DDPAI para visualizar em tempo real, reproduzir, baixar e compartilhar os vídeos.',
     },
     {
-      question: 'Quantas baterias acompanham o produto?',
+      question: 'O que acontece em caso de acidente?',
       answer:
-        'Acompanham 2 baterias de 48V 4.0Ah e 1 carregador bivolt, para revezar e manter o trabalho sem interrupção.',
+        'O sensor G embutido detecta a colisão e ativa automaticamente a gravação de emergência, protegendo o arquivo daquele momento contra sobrescrição.',
     },
     {
-      question: 'O que vem na caixa?',
-      answer:
-        'Acompanha a chave de impacto, mandril para furadeira, adaptador para parafusadeira, pontas, brocas, 2 baterias 48V, 1 carregador bivolt, 1 trava de segurança, 3 soquetes (19mm, 21mm e 22mm) e 1 maleta de transporte reforçada.',
+      question: 'Qual é a resolução de gravação?',
+      answer: 'Ultra HD 1440P (2K QHD), 2560×1440 a 30fps, com sensor de 12 megapixels.',
     },
     {
-      question: 'Os soquetes podem ser trocados por outros?',
-      answer:
-        'Sim. O encaixe de 1/2" é o padrão mais comum do mercado e compatível com uma grande variedade de soquetes e ponteiras profissionais.',
+      question: 'Qual é o ângulo de visão da câmera?',
+      answer: 'Ângulo amplo de 105° a 140°, com lente rotativa de 360° para ajustar a cobertura.',
     },
     {
-      question: 'Qual é a garantia?',
+      question: 'Qual é a garantia do produto?',
       answer:
         'O prazo e as condições comerciais de garantia deverão ser confirmados no checkout e na documentação da compra. Nenhum prazo não confirmado é exibido nesta página.',
     },

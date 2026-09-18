@@ -108,7 +108,7 @@ export function PurchaseCard({ product }: { product: Product }) {
               <span className="whitespace-nowrap text-[16px] tracking-[-0.12em] text-[#ffb000]" aria-label="5 estrelas">★★★★★</span>
               <strong className="text-[#2a2a2a]">4,9</strong>
               <span className="text-[#d6d6d6]">|</span>
-              <span className="whitespace-nowrap text-xs text-[#666666]">4,2 mil avaliações</span>
+              <span className="whitespace-nowrap text-xs text-[#666666]">1 mil avaliações</span>
             </div>
             <div className="flex shrink-0 items-center gap-1 text-[#6b6b6b]">
               <button className="grid size-9 place-items-center rounded-full transition hover:bg-[#f2f2f2] hover:text-[#fe6232]" type="button" aria-label="Favoritar produto">
