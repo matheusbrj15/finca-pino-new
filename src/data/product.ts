@@ -131,7 +131,86 @@ export const product: Product = {
     '1 Adesivos eletrostáticos',
     'Cartão microSD e Hardwire Kit NÃO inclusos (vendidos separadamente)',
   ],
-  reviews: [],
+  reviews: [
+    {
+      name: 'Lucas Fraga',
+      city: 'São Paulo, SP',
+      rating: 5,
+      verified: true,
+      text: 'A câmera parece ser ótima e bem discreta, o vendedor postou rapidamente e foi entregue rápido também, super indico!! Estarei indicando para familiares e amigos!',
+      images: [
+        {
+          src: '/product/ddpai-cliente-05-instalada-carro.png',
+          alt: 'Câmera DDPAI instalada de forma discreta atrás do retrovisor do carro do cliente',
+        },
+      ],
+    },
+    {
+      name: 'Rafael Bahia',
+      city: 'Minas Gerais, MG',
+      rating: 5,
+      verified: true,
+      text: 'Câmera muito boa, veio bem embalada, já testei, ótima resolução e ótimo áudio. Produto veio conforme anúncio e entrega rápida. Agora é instalar e testar. Por enquanto, satisfeito.',
+      images: [
+        {
+          src: '/product/ddpai-cliente-01-unboxing-cabo.png',
+          alt: 'Câmera DDPAI recém-desembalada na caixa junto com o cabo de alimentação',
+        },
+      ],
+    },
+    {
+      name: 'Pedro Campos',
+      city: 'Rio de Janeiro, RJ',
+      rating: 5,
+      verified: true,
+      text: 'Estou extremamente satisfeito com a minha nova câmera de carro! O desempenho é excepcional, imagem nítida e vibrante mesmo em condições de baixa luminosidade. Além disso, o suporte do vendedor foi impecável, sempre disponível para tirar minhas dúvidas. Recomendo a todos que buscam segurança.',
+      images: [
+        {
+          src: '/product/ddpai-cliente-04-caixa-aberta.png',
+          alt: 'Caixa da câmera DDPAI aberta mostrando o cabo e o corpo da câmera',
+        },
+      ],
+    },
+    {
+      name: 'Thiago Siqueira',
+      city: 'Bahia, BA',
+      rating: 5,
+      verified: true,
+      text: 'Chegou tudo certo e bem rápido, já está em teste. Aplicativo de fácil conexão e fácil pra baixar os vídeos e fotos.',
+      images: [
+        {
+          src: '/product/ddpai-cliente-02-cartao-sd.png',
+          alt: 'Caixa da DDPAI com o cartão microSD incluso na embalagem',
+        },
+      ],
+    },
+    {
+      name: 'Mateus Caio',
+      city: 'Paraná, PR',
+      rating: 5,
+      verified: true,
+      text: 'Fácil instalação, aplicativo fácil de mexer, chegou em 2 dias, super rápido, imagem perfeita.',
+      images: [
+        {
+          src: '/product/ddpai-cliente-03-acessorios-completos.png',
+          alt: 'Acessórios da câmera DDPAI: cabo, carregador veicular e câmera na caixa',
+        },
+      ],
+    },
+    {
+      name: 'João Fernandes',
+      city: 'Pernambuco, PE',
+      rating: 5,
+      verified: true,
+      text: 'Instalação simples e app bem intuitivo. Chegou em apenas 2 dias, entrega super rápida, e a imagem ficou perfeita.',
+      images: [
+        {
+          src: '/product/ddpai-cliente-06-camera-caixa.png',
+          alt: 'Câmera DDPAI Mini Pro dentro da caixa do produto',
+        },
+      ],
+    },
+  ],
   customerPhotos: [],
   faq: [
     {
