@@ -62,8 +62,8 @@ export const product: Product = {
   availableVoltages: ['48V'],
   images: [
     {
-      src: '/product/ddpai-instalacao-discreta.png',
-      alt: 'Instalação compacta e discreta da câmera veicular DDPAI Mini Pro 2K, escondida atrás do retrovisor do carro',
+      src: '/product/ddpai-kit-completo.png',
+      alt: 'Câmera Veicular DDPAI com Wi-Fi, app e visão noturna, e itens inclusos: cabo USB, carregador veicular, manual do usuário e adesivo 3M',
     },
     {
       src: '/product/ddpai-produto-recursos.png',
@@ -72,10 +72,6 @@ export const product: Product = {
     {
       src: '/product/ddpai-mini-pro-2k-banner.png',
       alt: 'DDPAI Mini Pro 2K - controle por aplicativo, Wi-Fi, sensor G, abertura F2.0, visão noturna, gravação em loop, supercapacitor e certificação Anatel',
-    },
-    {
-      src: '/product/ddpai-nightvis.png',
-      alt: 'Comparativo de visão noturna NightVIS 2.0 da câmera veicular DDPAI Mini Pro, com e sem a tecnologia, mesmo sob iluminação fraca ou faróis intensos',
     },
   ],
   benefits: [
