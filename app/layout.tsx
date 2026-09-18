@@ -28,9 +28,9 @@ function getMetaPixelScript(pixelId: string) {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'DDPAI Mini Pro Uber Câmera Veicular 2K | Vitrine Mix',
+  title: 'DDPAI Mini Pro Uber Câmera Veicular 4K | Vitrine Mix',
   description:
-    'Câmera veicular DDPAI Mini Pro 2K, gravação Ultra HD 1440P, ângulo de 140°, Wi-Fi, visão noturna NightVIS 2.0, sensor G e supercapacitor. Monitoramento de estacionamento 24h com Hardwire Kit (vendido separadamente).',
+    'Câmera veicular DDPAI Mini Pro 4K, gravação Ultra HD 3840×2160P, ângulo de 140°, Wi-Fi, visão noturna NightVIS 2.0, sensor G e supercapacitor. Monitoramento de estacionamento 24h com Hardwire Kit (vendido separadamente).',
   alternates: {
     canonical: '/',
   },
@@ -42,25 +42,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'DDPAI Mini Pro Uber Câmera Veicular 2K | Vitrine Mix',
+    title: 'DDPAI Mini Pro Uber Câmera Veicular 4K | Vitrine Mix',
     description:
-      'Gravação 2K com visão noturna NightVIS 2.0, ângulo de 140°, Wi-Fi e supercapacitor resistente de -20°C a 70°C.',
+      'Gravação 4K com visão noturna NightVIS 2.0, ângulo de 140°, Wi-Fi e supercapacitor resistente de -20°C a 70°C.',
     siteName: 'Vitrine Mix',
     images: [
       {
-        url: '/product/ddpai-produto-recursos.png',
-        width: 1024,
-        height: 1024,
-        alt: 'DDPAI Mini Pro 2K',
+        url: '/product/ddpai-kit-completo.png',
+        width: 1186,
+        height: 1186,
+        alt: 'DDPAI Mini Pro 4K',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DDPAI Mini Pro Uber Câmera Veicular 2K | Vitrine Mix',
+    title: 'DDPAI Mini Pro Uber Câmera Veicular 4K | Vitrine Mix',
     description:
-      'Câmera veicular 2K com visão noturna, Wi-Fi e supercapacitor, para motoristas de app e uso pessoal.',
-    images: ['/product/ddpai-produto-recursos.png'],
+      'Câmera veicular 4K com visão noturna, Wi-Fi e supercapacitor, para motoristas de app e uso pessoal.',
+    images: ['/product/ddpai-kit-completo.png'],
   },
 };
 

@@ -51,11 +51,11 @@ export type Product = {
 export const PRODUCT_CHECKOUT_URL: string | null = null;
 
 export const product: Product = {
-  name: 'DDPAI Mini Pro Uber Câmera Veicular 2K Ângulo de 140° Dash Cam Wi-Fi Visão Noturna Monitoramento 24h',
-  shortName: 'DDPAI Mini Pro 2K',
-  eyebrow: 'CÂMERA VEICULAR 2K • WI-FI • VISÃO NOTURNA • ÂNGULO 140° • SUPERCAPACITOR',
+  name: 'DDPAI Mini Pro Uber Câmera Veicular 4K Ângulo de 140° Dash Cam Wi-Fi Visão Noturna Monitoramento 24h',
+  shortName: 'DDPAI Mini Pro 4K',
+  eyebrow: 'CÂMERA VEICULAR 4K • WI-FI • VISÃO NOTURNA • ÂNGULO 140° • SUPERCAPACITOR',
   description:
-    'Câmera veicular DDPAI Mini Pro 2K com gravação em Ultra HD 1440P, ângulo de visão de 140°, visão noturna NightVIS 2.0 e lente rotativa de 360°. Conecta por Wi-Fi ao aplicativo DDPAI para visualizar, baixar e compartilhar vídeos. Sensor G com gravação de emergência automática em colisões, gravação em loop com sobrescrição automática e supercapacitor, que funciona de -20°C a 70°C sem risco de ignição. Instalação discreta atrás do retrovisor. Necessário cartão microSD Classe 10/U3 (até 256GB, vendido separadamente); o monitoramento de estacionamento 24h exige o Hardwire Kit exclusivo DDPAI (vendido separadamente).',
+    'Câmera veicular DDPAI Mini Pro 4K com gravação em Ultra HD (3840×2160P), ângulo de visão de 140°, visão noturna NightVIS 2.0 e lente rotativa de 360°. Conecta por Wi-Fi ao aplicativo DDPAI para visualizar, baixar e compartilhar vídeos. Sensor G com gravação de emergência automática em colisões, gravação em loop com sobrescrição automática e supercapacitor, que funciona de -20°C a 70°C sem risco de ignição. Instalação discreta atrás do retrovisor. Necessário cartão microSD Classe 10/U3 (até 256GB, vendido separadamente); o monitoramento de estacionamento 24h exige o Hardwire Kit exclusivo DDPAI (vendido separadamente).',
   price: 89.9,
   oldPrice: 179.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
@@ -76,9 +76,9 @@ export const product: Product = {
   ],
   benefits: [
     {
-      title: 'Gravação 2K com visão noturna real',
+      title: 'Gravação 4K com visão noturna real',
       description:
-        'Ultra HD 1440P a 30fps com tecnologia NightVIS 2.0, que preserva os detalhes mesmo sob iluminação fraca ou faróis intensos à noite.',
+        'Ultra HD 3840×2160P a 30fps com tecnologia NightVIS 2.0, que preserva os detalhes mesmo sob iluminação fraca ou faróis intensos à noite.',
     },
     {
       title: 'Ângulo de 140° com lente rotativa 360°',
@@ -106,10 +106,10 @@ export const product: Product = {
   ],
   specifications: [
     { label: 'Marca', value: 'DDPAI' },
-    { label: 'Modelo', value: 'Mini Pro 2K' },
+    { label: 'Modelo', value: 'Mini Pro 4K' },
     { label: 'Fabricante do chip', value: 'HiSilicon' },
     { label: 'Pixels', value: '12 megapixels' },
-    { label: 'Resolução de vídeo', value: '2560×1440P (2K QHD) @30fps' },
+    { label: 'Resolução de vídeo', value: '3840×2160P (4K Ultra HD) @30fps' },
     { label: 'Formato de vídeo', value: 'AVI (H.265/H.264)' },
     { label: 'Ângulo de visão', value: '105° a 140°' },
     { label: 'Cartão de memória', value: 'microSD Classe 10/U3, até 256GB (vendido separadamente)' },
@@ -161,7 +161,7 @@ export const product: Product = {
     },
     {
       question: 'Qual é a resolução de gravação?',
-      answer: 'Ultra HD 1440P (2K QHD), 2560×1440 a 30fps, com sensor de 12 megapixels.',
+      answer: 'Ultra HD 4K (3840×2160P) a 30fps, com sensor de 12 megapixels.',
     },
     {
       question: 'Qual é o ângulo de visão da câmera?',
