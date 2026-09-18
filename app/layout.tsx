@@ -3,13 +3,15 @@ import Script from 'next/script';
 import './globals.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
-const hasValidMetaPixelId = Boolean(metaPixelId && /^\d+$/.test(metaPixelId));
 // Pixel de atribuição de UTM da Utmify (utmify.com.br). Antes este script vinha
 // ofuscado (base64 + XOR) escondendo a URL de destino — mesmo comportamento,
-// agora em texto legível para facilitar auditoria e manutenção.
-const UTMIFY_PIXEL_ID = '6a6443d858f1c38088e8658d';
+// agora em texto legível para facilitar auditoria e manutenção. ID atualizado
+// para o pixel Utmify criado especificamente para este produto (câmera DDPAI).
+const UTMIFY_PIXEL_ID = '6aac972f4bbf67c27aaddf95';
 const UTMIFY_SCRIPT_URL = 'https://cdn.utmify.com.br/scripts/pixel/pixel.js';
+
+// Meta Pixel (Facebook Ads) criado para este produto.
+const META_PIXEL_ID = '1566187347974781';
 
 function getUtmifyScript(pixelId: string, scriptUrl: string) {
   return `window.pixelId = ${JSON.stringify(pixelId)};
@@ -76,24 +78,20 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: getUtmifyScript(UTMIFY_PIXEL_ID, UTMIFY_SCRIPT_URL) }}
         />
-        {hasValidMetaPixelId && metaPixelId ? (
-          <>
-            <Script
-              id="meta-pixel"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{ __html: getMetaPixelScript(metaPixelId) }}
-            />
-            <noscript>
-              <img
-                alt=""
-                height="1"
-                width="1"
-                style={{ display: 'none' }}
-                src={`https://www.facebook.com/tr?id=${metaPixelId}&ev=PageView&noscript=1`}
-              />
-            </noscript>
-          </>
-        ) : null}
+        <Script
+          id="meta-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: getMetaPixelScript(META_PIXEL_ID) }}
+        />
+        <noscript>
+          <img
+            alt=""
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
       </body>
     </html>
   );
