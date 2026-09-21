@@ -48,88 +48,90 @@ export type Product = {
 
 // Cole aqui a URL externa de checkout quando ela estiver disponível.
 // Todos os CTAs da página consomem esta única configuração.
-export const PRODUCT_CHECKOUT_URL: string | null = null;
+export const PRODUCT_CHECKOUT_URL: string | null =
+  'https://seguro.final-agora-br.shop/api/public/shopify?product=906924912448&store=9069';
 
 export const product: Product = {
-  name: 'DDPAI Mini Pro Uber Câmera Veicular 4K Ângulo de 140° Dash Cam Wi-Fi Visão Noturna Monitoramento 24h',
-  shortName: 'DDPAI Mini Pro 4K',
-  eyebrow: 'CÂMERA VEICULAR 4K • WI-FI • VISÃO NOTURNA • ÂNGULO 140° • SUPERCAPACITOR',
+  name: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 Profissional',
+  shortName: 'Menegotti MMA PRO 1000',
+  eyebrow: 'MÁQUINA DE PINTURA AIRLESS • 1000W • 214 BAR • USO PROFISSIONAL',
   description:
-    'Câmera veicular DDPAI Mini Pro 4K com gravação em Ultra HD (3840×2160P), ângulo de visão de 140°, visão noturna NightVIS 2.0 e lente rotativa de 360°. Conecta por Wi-Fi ao aplicativo DDPAI para visualizar, baixar e compartilhar vídeos. Sensor G com gravação de emergência automática em colisões, gravação em loop com sobrescrição automática e supercapacitor, que funciona de -20°C a 70°C sem risco de ignição. Instalação discreta atrás do retrovisor. Necessário cartão microSD Classe 10/U3 (até 256GB, vendido separadamente); o monitoramento de estacionamento 24h exige o Hardwire Kit exclusivo DDPAI (vendido separadamente).',
+    'Máquina de pintura airless Menegotti MMA PRO 1000, com sistema de alta pressão de até 214 bar (21,4 MPa) para pulverização eficiente e acabamento uniforme. Potência de 1000W e fluxo de 2,0L/min a 12 MPa (120 bar) com água, com mangueira de alta pressão de 15 metros e bico de até 0,021" (0,53mm). Indicada para paredes e interiores, fachadas, muros, grades, estruturas e pintura profissional em geral, com aplicação precisa e menor desperdício de tinta. Suporta materiais com viscosidade de até 20.000 MPa.s e temperatura de até 43°C. Acompanha pistola airless, mangueira de 15m, filtro de entrada, óleo lubrificante, prolongador/extensão e anéis de vedação. Garantia de 90 dias contra defeitos de fabricação.',
   price: 89.9,
-  oldPrice: 179.9,
+  oldPrice: 189.9,
   checkoutUrl: PRODUCT_CHECKOUT_URL,
   availableVoltages: ['48V'],
   images: [
     {
-      src: '/product/ddpai-kit-completo.png',
-      alt: 'Câmera Veicular DDPAI com Wi-Fi, app e visão noturna, e itens inclusos: cabo USB, carregador veicular, manual do usuário e adesivo 3M',
+      src: '/product/mma-pro1000-principal-1.png',
+      alt: 'Máquina de pintura airless com pistola, mangueira de alta pressão, regulador de pressão e acessórios inclusos',
     },
     {
-      src: '/product/ddpai-produto-recursos.png',
-      alt: 'Câmera veicular DDPAI Mini Pro 2K com recursos: visão noturna, bloqueio de emergência, controle por app, gravação 2K, gravação em loop, monitoramento 24h, supercapacitor e lente rotativa 360°',
+      src: '/product/mma-pro1000-principal-2.png',
+      alt: 'Tecnologia airless: alta pressão, aplicação uniforme e maior produtividade na pintura',
     },
     {
-      src: '/product/ddpai-mini-pro-2k-banner.png',
-      alt: 'DDPAI Mini Pro 2K - controle por aplicativo, Wi-Fi, sensor G, abertura F2.0, visão noturna, gravação em loop, supercapacitor e certificação Anatel',
+      src: '/product/mma-pro1000-principal-3.png',
+      alt: 'Máquina de pintura airless feita para diferentes projetos: paredes, telhados, cercas e pinturas profissionais',
     },
   ],
   benefits: [
     {
-      title: 'Gravação 4K com visão noturna real',
+      title: 'Alta pressão para acabamento uniforme',
       description:
-        'Ultra HD 3840×2160P a 30fps com tecnologia NightVIS 2.0, que preserva os detalhes mesmo sob iluminação fraca ou faróis intensos à noite.',
+        'Sistema airless com pressão máxima de 214 bar (21,4 MPa) e fluxo de 2,0L/min a 12 MPa (120 bar) com água, para uma pulverização eficiente e um acabamento uniforme.',
     },
     {
-      title: 'Ângulo de 140° com lente rotativa 360°',
+      title: 'Alto rendimento em grandes áreas',
       description:
-        'Campo de visão amplo de 105° a 140°, com lente que gira livremente para cobrir uma área maior do trajeto.',
+        'Ideal para projetos exigentes como fachadas, muros e grandes paredes, com aplicação precisa que reduz o desperdício de tinta.',
     },
     {
-      title: 'Supercapacitor: mais segurança em temperaturas extremas',
+      title: 'Versátil para diferentes projetos',
       description:
-        'Substitui a bateria de lítio por um supercapacitor, sem risco de ignição, com melhor resistência térmica de -20°C a 70°C.',
+        'Serve para paredes e interiores, telhados, cercas, fachadas, muros, grades e estruturas, tanto em uso doméstico quanto profissional.',
     },
     {
-      title: 'Wi-Fi integrado e controle pelo app DDPAI',
+      title: 'Kit completo, pronto para usar',
       description:
-        'Conecte por Wi-Fi e visualize, reproduza, baixe e compartilhe os vídeos direto do celular, sem precisar retirar o cartão de memória.',
+        'Acompanha pistola airless, mangueira de alta pressão de 15m, filtro de entrada, óleo lubrificante, prolongador/extensão e anéis de vedação.',
     },
   ],
   applications: [
-    'Motoristas de aplicativo (Uber/99)',
-    'Uso pessoal no dia a dia',
-    'Viagens de estrada',
-    'Frotas e táxis',
-    'Prova em caso de acidente',
-    'Monitoramento de estacionamento (com Hardwire Kit)',
+    'Pintura de paredes e interiores',
+    'Fachadas e muros',
+    'Grades e estruturas',
+    'Telhados',
+    'Cercas',
+    'Construção civil e reformas',
+    'Pintura profissional',
   ],
   specifications: [
-    { label: 'Marca', value: 'DDPAI' },
-    { label: 'Modelo', value: 'Mini Pro 4K' },
-    { label: 'Fabricante do chip', value: 'HiSilicon' },
-    { label: 'Pixels', value: '12 megapixels' },
-    { label: 'Resolução de vídeo', value: '3840×2160P (4K Ultra HD) @30fps' },
-    { label: 'Formato de vídeo', value: 'AVI (H.265/H.264)' },
-    { label: 'Ângulo de visão', value: '105° a 140°' },
-    { label: 'Cartão de memória', value: 'microSD Classe 10/U3, até 256GB (vendido separadamente)' },
-    { label: 'Conectividade', value: 'Wi-Fi 2.4GHz + app DDPAI (Android/iOS)' },
-    { label: 'Sensor de gravidade (G-Sensor)', value: 'Sim, com gravação de emergência automática' },
-    { label: 'Detecção de movimento', value: 'Sim' },
-    { label: 'Gravação em loop', value: 'Sim, com sobrescrição automática' },
-    { label: 'Alimentação', value: 'Supercapacitor (-20°C a 70°C)' },
-    { label: 'Instalação', value: 'Portátil, atrás do retrovisor' },
-    { label: 'Garantia', value: '1 ano' },
+    { label: 'Marca', value: 'Menegotti' },
+    { label: 'Modelo', value: 'MMA PRO 1000' },
+    { label: 'Tipo', value: 'Airless (sistema sem ar)' },
+    { label: 'Potência', value: '1000W' },
+    { label: 'Tensão', value: '127V ou 220V' },
+    { label: 'Frequência', value: '60Hz' },
+    { label: 'Cabo de alimentação', value: '3x1,5mm² - 6m' },
+    { label: 'Pressão máxima de operação', value: '214 bar (21,4 MPa)' },
+    { label: 'Fluxo de volume', value: '2,0 L/min a 12 MPa (120 bar) com água' },
+    { label: 'Tamanho máximo do bico', value: '0,021" (0,53mm)' },
+    { label: 'Viscosidade máxima do material', value: '20.000 MPa.s' },
+    { label: 'Temperatura máxima do material a projetar', value: '43°C' },
+    { label: 'Nível máximo de pressão sonora', value: '80 dB (A)' },
+    { label: 'Peso', value: '15,2 kg' },
+    { label: 'Dimensões (C x L x A)', value: '480 x 360 x 405 mm' },
+    { label: 'Garantia', value: '90 dias contra defeitos de fabricação' },
   ],
   kitContents: [
-    '1 Câmera Veicular DDPAI Mini Pro',
-    '1 Pé de cabra (ferramenta de instalação)',
-    '1 Cabo de alimentação',
-    '1 Carregador veicular',
-    '1 Manual do usuário',
-    '1 Adesivo 3M',
-    '1 Adesivos eletrostáticos',
-    'Cartão microSD e Hardwire Kit NÃO inclusos (vendidos separadamente)',
+    '1x Máquina de Pintura Airless MMA PRO 1000',
+    '1x Pistola Airless',
+    '1x Mangueira de Alta Pressão (15m)',
+    '1x Filtro de Entrada',
+    '1x Óleo Lubrificante',
+    '1x Prolongador / Extensão',
+    '2x Anéis de Vedação',
   ],
   reviews: [
     {
@@ -137,11 +139,11 @@ export const product: Product = {
       city: 'São Paulo, SP',
       rating: 5,
       verified: true,
-      text: 'A câmera parece ser ótima e bem discreta, o vendedor postou rapidamente e foi entregue rápido também, super indico!! Estarei indicando para familiares e amigos!',
+      text: 'Essa máquina nessa configuração custa muito mais caro se for de outra marca. Essa é acessível e vale a pena. Não deixa a desejar.',
       images: [
         {
-          src: '/product/ddpai-cliente-05-instalada-carro.png',
-          alt: 'Câmera DDPAI instalada de forma discreta atrás do retrovisor do carro do cliente',
+          src: '/product/mma-pro1000-cliente-06-kit-completo.png',
+          alt: 'Kit completo da máquina Menegotti MMA PRO 1000 com mangueira, pistola e acessórios',
         },
       ],
     },
@@ -150,11 +152,11 @@ export const product: Product = {
       city: 'Minas Gerais, MG',
       rating: 5,
       verified: true,
-      text: 'Câmera muito boa, veio bem embalada, já testei, ótima resolução e ótimo áudio. Produto veio conforme anúncio e entrega rápida. Agora é instalar e testar. Por enquanto, satisfeito.',
+      text: 'A airless chegou super rápido, bem embalada, caixa totalmente preservada e mercadoria sem avarias. Não vou usar agora, mas recomendo.',
       images: [
         {
-          src: '/product/ddpai-cliente-01-unboxing-cabo.png',
-          alt: 'Câmera DDPAI recém-desembalada na caixa junto com o cabo de alimentação',
+          src: '/product/mma-pro1000-cliente-05-caixa-menegotti.png',
+          alt: 'Caixa da máquina Menegotti recebida sem avarias',
         },
       ],
     },
@@ -163,11 +165,11 @@ export const product: Product = {
       city: 'Rio de Janeiro, RJ',
       rating: 5,
       verified: true,
-      text: 'Estou extremamente satisfeito com a minha nova câmera de carro! O desempenho é excepcional, imagem nítida e vibrante mesmo em condições de baixa luminosidade. Além disso, o suporte do vendedor foi impecável, sempre disponível para tirar minhas dúvidas. Recomendo a todos que buscam segurança.',
+      text: 'Chegou no prazo, excelente máquina, adorei, super recomendo a compra da mesma.',
       images: [
         {
-          src: '/product/ddpai-cliente-04-caixa-aberta.png',
-          alt: 'Caixa da câmera DDPAI aberta mostrando o cabo e o corpo da câmera',
+          src: '/product/mma-pro1000-cliente-04-maquina-caixa.png',
+          alt: 'Máquina de pintura airless Menegotti dentro da caixa do produto',
         },
       ],
     },
@@ -176,11 +178,11 @@ export const product: Product = {
       city: 'Bahia, BA',
       rating: 5,
       verified: true,
-      text: 'Chegou tudo certo e bem rápido, já está em teste. Aplicativo de fácil conexão e fácil pra baixar os vídeos e fotos.',
+      text: 'Fiz este muro completamente irregular em meio dia, com 2 demãos. O que seria impossível sem ela.',
       images: [
         {
-          src: '/product/ddpai-cliente-02-cartao-sd.png',
-          alt: 'Caixa da DDPAI com o cartão microSD incluso na embalagem',
+          src: '/product/mma-pro1000-cliente-03-uso.png',
+          alt: 'Cliente usando a máquina para pintar um muro irregular',
         },
       ],
     },
@@ -189,11 +191,11 @@ export const product: Product = {
       city: 'Paraná, PR',
       rating: 5,
       verified: true,
-      text: 'Fácil instalação, aplicativo fácil de mexer, chegou em 2 dias, super rápido, imagem perfeita.',
+      text: 'A máquina é excelente, fácil de usar e fácil para limpar também! Com relação ao barulho, ouvi muitos comentários a respeito, no vídeo parece que o barulho é enorme, mas acho que é por conta do vídeo, pois o barulho que ela faz não é tão forte assim! Investimento garantido, comprei, gostei e indico.',
       images: [
         {
-          src: '/product/ddpai-cliente-03-acessorios-completos.png',
-          alt: 'Acessórios da câmera DDPAI: cabo, carregador veicular e câmera na caixa',
+          src: '/product/mma-pro1000-cliente-01-pistola-caixa.png',
+          alt: 'Pistola airless e acessórios ainda embalados na caixa',
         },
       ],
     },
@@ -202,11 +204,11 @@ export const product: Product = {
       city: 'Pernambuco, PE',
       rating: 5,
       verified: true,
-      text: 'Instalação simples e app bem intuitivo. Chegou em apenas 2 dias, entrega super rápida, e a imagem ficou perfeita.',
+      text: 'Ótimo equipamento, deu um pouco de dor de cabeça na instalação, se atentar na válvula de entrada, estava travada, destravei com um tubo de caneta de plástico.',
       images: [
         {
-          src: '/product/ddpai-cliente-06-camera-caixa.png',
-          alt: 'Câmera DDPAI Mini Pro dentro da caixa do produto',
+          src: '/product/mma-pro1000-cliente-02-mangueira-acessorios.png',
+          alt: 'Mangueira de alta pressão e acessórios da máquina airless',
         },
       ],
     },
@@ -214,42 +216,41 @@ export const product: Product = {
   customerPhotos: [],
   faq: [
     {
-      question: 'A câmera vem com cartão de memória incluso?',
+      question: 'Para quais tipos de pintura essa máquina serve?',
       answer:
-        'Não. É necessário um cartão microSD Classe 10 ou U3, de até 256GB, vendido separadamente. Evite cartões genéricos ou linhas "Ultra" de outros fornecedores, pois podem não sustentar a gravação em alta resolução.',
+        'Paredes e interiores, fachadas, muros, grades, estruturas, telhados e cercas, além de uso profissional em construção civil e reformas.',
     },
     {
-      question: 'O monitoramento de estacionamento 24h funciona sem instalar nada extra?',
+      question: 'Qual é a pressão máxima da máquina?',
+      answer: 'Pressão máxima de operação de 214 bar (21,4 MPa), com fluxo de 2,0 L/min a 12 MPa (120 bar) com água.',
+    },
+    {
+      question: 'O que acompanha o produto?',
       answer:
-        'Não. Esse recurso exige o Hardwire Kit exclusivo da DDPAI, vendido separadamente. Sem ele, a câmera grava apenas enquanto o veículo estiver ligado.',
+        'Máquina MMA PRO 1000, pistola airless, mangueira de alta pressão de 15m, filtro de entrada, óleo lubrificante, prolongador/extensão e 2 anéis de vedação.',
     },
     {
-      question: 'A câmera tem visão noturna?',
+      question: 'Em qual voltagem a máquina funciona?',
       answer:
-        'Sim. A tecnologia NightVIS 2.0 preserva os detalhes da gravação mesmo sob iluminação fraca de postes ou com faróis intensos.',
+        'A máquina opera em 127V ou 220V, conforme a configuração do equipamento. Confirme a voltagem da sua rede elétrica antes de ligar.',
     },
     {
-      question: 'Como faço para ver os vídeos gravados no celular?',
+      question: 'A máquina faz muito barulho?',
       answer:
-        'A câmera tem Wi-Fi integrado. Basta conectar pelo aplicativo DDPAI para visualizar em tempo real, reproduzir, baixar e compartilhar os vídeos.',
+        'O nível máximo de pressão sonora é de 80 dB(A), próximo ao de um aspirador de pó ou liquidificador em funcionamento.',
     },
     {
-      question: 'O que acontece em caso de acidente?',
+      question: 'Qual é o peso e as dimensões da máquina?',
+      answer: 'Peso de 15,2 kg e dimensões de 480 x 360 x 405 mm (C x L x A).',
+    },
+    {
+      question: 'Qual a viscosidade máxima de tinta que a máquina suporta?',
       answer:
-        'O sensor G embutido detecta a colisão e ativa automaticamente a gravação de emergência, protegendo o arquivo daquele momento contra sobrescrição.',
-    },
-    {
-      question: 'Qual é a resolução de gravação?',
-      answer: 'Ultra HD 4K (3840×2160P) a 30fps, com sensor de 12 megapixels.',
-    },
-    {
-      question: 'Qual é o ângulo de visão da câmera?',
-      answer: 'Ângulo amplo de 105° a 140°, com lente rotativa de 360° para ajustar a cobertura.',
+        'Suporta materiais com viscosidade de até 20.000 MPa.s e temperatura de até 43°C no material a ser projetado.',
     },
     {
       question: 'Qual é a garantia do produto?',
-      answer:
-        'O prazo e as condições comerciais de garantia deverão ser confirmados no checkout e na documentação da compra. Nenhum prazo não confirmado é exibido nesta página.',
+      answer: 'Garantia de 90 dias contra defeitos de fabricação.',
     },
   ],
 };

@@ -5,12 +5,11 @@ import './globals.css';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 // Pixel de atribuição de UTM da Utmify (utmify.com.br). Antes este script vinha
 // ofuscado (base64 + XOR) escondendo a URL de destino — mesmo comportamento,
-// agora em texto legível para facilitar auditoria e manutenção. ID atualizado
-// para o pixel Utmify criado especificamente para este produto (câmera DDPAI).
+// agora em texto legível para facilitar auditoria e manutenção.
 const UTMIFY_PIXEL_ID = '6aac972f4bbf67c27aaddf95';
 const UTMIFY_SCRIPT_URL = 'https://cdn.utmify.com.br/scripts/pixel/pixel.js';
 
-// Meta Pixel (Facebook Ads) criado para este produto.
+// Meta Pixel (Facebook Ads).
 const META_PIXEL_ID = '1566187347974781';
 
 function getUtmifyScript(pixelId: string, scriptUrl: string) {
@@ -28,9 +27,9 @@ function getMetaPixelScript(pixelId: string) {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'DDPAI Mini Pro Uber Câmera Veicular 4K | Vitrine Mix',
+  title: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 | Vitrine Mix',
   description:
-    'Câmera veicular DDPAI Mini Pro 4K, gravação Ultra HD 3840×2160P, ângulo de 140°, Wi-Fi, visão noturna NightVIS 2.0, sensor G e supercapacitor. Monitoramento de estacionamento 24h com Hardwire Kit (vendido separadamente).',
+    'Máquina de pintura airless Menegotti MMA PRO 1000, sistema de alta pressão de até 214 bar, 1000W de potência e mangueira de 15m. Ideal para paredes, fachadas, muros e pintura profissional.',
   alternates: {
     canonical: '/',
   },
@@ -42,25 +41,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'DDPAI Mini Pro Uber Câmera Veicular 4K | Vitrine Mix',
+    title: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 | Vitrine Mix',
     description:
-      'Gravação 4K com visão noturna NightVIS 2.0, ângulo de 140°, Wi-Fi e supercapacitor resistente de -20°C a 70°C.',
+      'Alta pressão de até 214 bar, 1000W de potência e acabamento uniforme para paredes, fachadas, muros e projetos profissionais.',
     siteName: 'Vitrine Mix',
     images: [
       {
-        url: '/product/ddpai-kit-completo.png',
-        width: 1186,
-        height: 1186,
-        alt: 'DDPAI Mini Pro 4K',
+        url: '/product/mma-pro1000-principal-1.png',
+        width: 1563,
+        height: 1563,
+        alt: 'Máquina de Pintura Airless Menegotti MMA PRO 1000',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DDPAI Mini Pro Uber Câmera Veicular 4K | Vitrine Mix',
+    title: 'Máquina de Pintura Airless Menegotti MMA PRO 1000 | Vitrine Mix',
     description:
-      'Câmera veicular 4K com visão noturna, Wi-Fi e supercapacitor, para motoristas de app e uso pessoal.',
-    images: ['/product/ddpai-kit-completo.png'],
+      'Máquina de pintura airless profissional, alta pressão, acabamento uniforme e kit completo pronto para uso.',
+    images: ['/product/mma-pro1000-principal-1.png'],
   },
 };
 

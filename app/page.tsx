@@ -24,8 +24,8 @@ export default function Home() {
       <section aria-label="Informações completas do produto" className="bg-white">
         <div className="mx-auto w-full max-w-[1180px] px-0 sm:px-6 sm:py-4 lg:px-8">
           <img
-            src="/product/ddpai-informativo.png"
-            alt="DDPAI Mini Pro 4K - principais diferenciais: 4K Ultra HD (3840×2160P), ângulo 140°, visão noturna NightVIS 2.0, Wi-Fi + app, lente rotativa 360° e sensor G; conectividade e controle pelo app DDPAI; instalação compacta e discreta; monitoramento de estacionamento 24h (requer Hardwire Kit vendido separadamente); supercapacitor -20°C a 70°C; gravação em loop; dimensões e itens inclusos"
+            src="/product/mma-pro1000-informativo.png"
+            alt="Máquina de Pintura Airless Menegotti MMA PRO 1000 Profissional - sistema airless, 1000W de potência, 214 bar de pressão, 2,0L/min de fluxo, mangueira de 15m; aplicações em paredes, fachadas, muros, grades e pintura profissional; detalhes da pistola airless, filtro, mangueira de retorno, entrada de óleo e prolongador; especificações técnicas completas e itens inclusos"
             className="w-full"
           />
         </div>
